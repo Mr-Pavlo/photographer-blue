@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header, main, footer {
+  padding: 0 96px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 47px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+nav .logo {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+nav li {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #1D1D1E;
+  display: block;
+  padding: 30px 20px;
+  transition: 0.2s ease-out;
+}
+nav a:hover {
+  background-color: #2B3E82;
+  color: #FAFAFA;
+}
+
+main {
+  padding-top: 79.2px;
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .text-content-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#home .decoration-paragraphs {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 78px;
+}
+#home a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #FAFAFA;
+  background-color: #2B3E82;
+  border: none;
+  text-align: center;
+  padding: 16px 48px;
+  border: 2px solid #2B3E82;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+#home a:hover {
+  background-color: #FAFAFA;
+  color: #2B3E82;
+}
+#home .hero-pink-squa {
+  width: 614px;
+  height: 553px;
+  background-color: #FDE9EB;
+  border: none;
+}
+#home .container-collage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 600px;
+  height: 500px;
+  position: relative;
+  padding-left: 33px;
+  top: -30px;
+}
+#home .img-small {
+  width: 191px;
+  height: 297px;
+  flex-shrink: 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+#home .img-large {
+  width: 339px;
+  height: 297px;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#home .rectangle-on-collage {
+  position: absolute;
+  width: 491px;
+  height: 674px;
+  border: 2px solid #2B3E82;
+  left: 62.5px;
+  top: -30px;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#about .about-pink-squa {
+  background-color: #FDE9EB;
+  width: 392px;
+  height: 492px;
+}
+#about .about-pink-squa img {
+  width: 392px;
+  height: 492px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+#about .about-pink-squa .rectangle-for-about {
+  width: 392px;
+  height: 492px;
+  border: 2px solid #2B3E82;
+  position: relative;
+  top: -496px;
+}
+#about .text-content-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 611px;
+}
+#about .decoration-paragraphs {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 78px;
+}
+#about a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #2B3E82;
+  background-color: #FAFAFA;
+  border: none;
+  text-align: center;
+  padding: 16px 48px;
+  border: 2px solid #2B3E82;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+#about a:hover {
+  background-color: #2B3E82;
+  color: #FAFAFA;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+#reviews img {
+  width: 110px;
+  height: 110px;
+}
+#reviews .list-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 402px);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+#reviews .item-list-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  align-items: center;
+  position: relative;
+}
+#reviews .decoration-paragraphs {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 78px;
+  padding: 25px;
+  background-color: #FDE9EB;
+  max-width: 370px;
+  flex: 1;
+}
+#reviews .top-rectangular-dark {
+  position: absolute;
+  border: 1px solid #2B3E82;
+  z-index: -1;
+  width: 157px;
+  height: 140px;
+  top: -22px;
+  left: 136px;
+}
+#reviews .top-rectangular-light {
+  position: absolute;
+  border: 2px solid #FDE9EB;
+  width: 157px;
+  height: 140px;
+  top: -8px;
+  left: 108px;
+}
+#reviews .bottom-rectangular {
+  position: absolute;
+  border: 1px solid #2B3E82;
+  width: 402px;
+  height: 254px;
+  z-index: -1;
+  top: 70px;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#portfolio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#portfolio .switch {
+  outline: 2px solid transparent;
+  outline-offset: 10px;
+  transition: transform 0.3s ease-out, outline-color 0.3s ease-out, margin 0.3s ease-out;
+}
+#portfolio .switch:hover {
+  transform: scale(110%);
+  outline-color: #2B3E82;
+}
+#portfolio .navigation-collage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+#portfolio .portfolio-collage {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+}
+#portfolio .pink-rectangular-portfolio {
+  width: 237px;
+  height: 366px;
+  background-color: #FDE9EB;
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+}
+#portfolio .dark-border-rectangular-portfolio {
+  width: 237px;
+  height: 366px;
+  border: 2px solid #2B3E82;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#portfolio .dark-rectangular-portfolio {
+  width: 448px;
+  height: 160px;
+  background-color: #2B3E82;
+  position: absolute;
+  z-index: -1;
+  bottom: -20px;
+  right: -20px;
+}
+#portfolio .light-border-rectangular-portfolio {
+  width: 448px;
+  height: 160px;
+  position: absolute;
+  border: 2px solid #FDE9EB;
+  bottom: 20px;
+  right: 20px;
+}
+#portfolio .coll-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#portfolio .img-1, #portfolio .img-2, #portfolio .img-3, #portfolio .img-8 {
+  width: 277px;
+  height: 200px;
+}
+#portfolio .img-2 {
+  -o-object-position: center 30%;
+     object-position: center 30%;
+}
+#portfolio .coll-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#portfolio .large-img-in-coll-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#portfolio .img-4 {
+  width: 297px;
+  height: 420px;
+}
+#portfolio .img-5 {
+  width: 382px;
+  height: 420px;
+}
+#portfolio .small-img-in-coll-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#portfolio .img-6, #portfolio .img-7 {
+  width: 191px;
+  height: 200px;
+}
+
+#price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 73px;
+}
+#price .list-type-price {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+}
+#price .card-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  margin: 0 0;
+  padding: 21px;
+  background-color: #FDE9EB;
+  border: none;
+  outline: 2px solid transparent;
+  outline-offset: 20px;
+  transition: transform 0.2s ease-out, outline-color 0.2s ease-out, margin 0.2s ease-out;
+}
+#price .card-price:hover {
+  outline-color: #2B3E82;
+  transform: scale(1.1);
+  margin: 0 21px;
+}
+#price img {
+  width: 255px;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#price .hero-card {
+  position: relative;
+}
+#price p {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  color: #FAFAFA;
+  font-family: "Philosopher", sans-serif;
+  font-size: 36px;
+  width: 50%;
+}
+#price ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#price li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  color: #414143;
+  gap: 5px;
+}
+#price .button-card-price {
+  border: 2px solid #2B3E82;
+  padding: 8px 52px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2B3E82;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+#price .button-card-price:hover {
+  background-color: #2B3E82;
+  color: #FAFAFA;
+}
+
+footer {
+  background-color: #2B3E82;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .variant-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer form {
+  margin: 126px 0;
+}
+footer fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+footer legend {
+  margin-bottom: 18px;
+  font-size: 27px;
+  font-family: "Philosopher", sans-serif;
+  color: #FAFAFA;
+  line-height: 31px;
+}
+footer label {
+  margin-bottom: 28px;
+  width: 402px;
+}
+footer label:last-of-type {
+  margin-bottom: 58px;
+}
+footer input[type=tel], footer input[type=email], footer textarea {
+  width: 402px;
+  padding: 13px 11px;
+  background-color: #2B3E82;
+  border: 2px solid #FAFAFA;
+  color: #FAFAFA;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+footer input::-moz-placeholder, footer textarea::-moz-placeholder {
+  color: #FAFAFA;
+  opacity: 0.8;
+}
+footer input::placeholder, footer textarea::placeholder {
+  color: #FAFAFA;
+  opacity: 0.8;
+}
+footer input[type=tel]:focus,
+footer input[type=email]:focus,
+footer textarea:focus {
+  outline: none;
+  border: 2px solid orange;
+}
+footer input:not(:focus):not(:-moz-placeholder):valid, footer textarea:not(:focus):not(:-moz-placeholder):valid {
+  border: 2px solid rgb(37, 147, 37);
+}
+footer input:not(:focus):not(:placeholder-shown):valid,
+footer textarea:not(:focus):not(:placeholder-shown):valid {
+  border: 2px solid rgb(37, 147, 37);
+}
+footer input:not(:focus):not(:-moz-placeholder):invalid {
+  border: 2px solid rgb(200, 60, 60);
+}
+footer input:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid rgb(200, 60, 60);
+}
+footer input[type=button] {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #2B3E82;
+  background-color: #FAFAFA;
+  border: none;
+  text-align: center;
+  padding: 16px 48px;
+  border: 2px solid #2B3E82;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 10px 118px;
+  border: 2px solid #FAFAFA;
+}
+footer input[type=button]:hover {
+  background-color: #2B3E82;
+  border: 2px solid #FAFAFA;
+  color: #FAFAFA;
+}
+footer textarea {
+  min-height: 120px;
+  max-height: 120px;
+  min-width: 402px;
+  max-width: 402px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #FAFAFA #2B3E82;
+  resize: none;
+}
+footer h6, footer a {
+  color: #FAFAFA;
+}
+footer a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+}
+footer a:hover {
+  color: orange;
+}
+footer .contact-on-social {
+  align-self: self-end;
+  margin-bottom: 126px;
+}
+footer .list-social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+footer li {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  gap: 20px;
+}
+footer li:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    width: 1440px;
+  }
+  section {
+    width: 1440px;
+    scroll-margin-top: 79.2px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #home {
+    height: calc(100vh - 79.2px);
+  }
+  #home .text-content-home {
+    width: 508px;
+  }
+  #about {
+    height: calc(80vh - 79.2px);
+  }
+  #reviews {
+    height: calc(70vh - 79.2px);
+  }
+  #portfolio {
+    height: calc(100vh - 79.2px);
+  }
+  #price {
+    height: calc(90vh - 79.2px);
+  }
+  .variant-contact {
+    width: 1440px;
+  }
+}/*# sourceMappingURL=style.css.map */
