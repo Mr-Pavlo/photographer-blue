@@ -8,14 +8,11 @@
     scroll-behavior: smooth;
 }
 
-header, main, footer {
-    padding: 0 96px;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: variables.$font-philosopher;
     font-size: variables.$all-heading-size;
     font-weight: variables.$weight-600;
+    color: variables.$text-color-1;
     text-transform: uppercase;
     margin-bottom: 18px;
 }
@@ -26,6 +23,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 0 96px;
     align-items: center;
     z-index: 99;
 
@@ -55,6 +53,8 @@ nav {
     }
 
     a {
+        position: relative;
+
         text-decoration: none;
         text-transform: uppercase;
 
@@ -66,17 +66,33 @@ nav {
         display: block;
         padding: 30px 20px;
 
-        transition: 0.2s ease-out;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
 
-        &:hover {
+            width: 0;
+            height: 2px;
+
             background-color: variables.$primary-color-1;
-            color: variables.$text-color-2;
+
+            transform: translateX(-50%);
+            transition: width 0.2s ease-out;
+        }
+
+        &:hover::after {
+            width: 100%;
         }
     }
 }
 
 main {
     padding-top: 79.2px;
+}
+
+section {
+    padding: 0 96px;
 }
 
 #home {
@@ -98,7 +114,7 @@ main {
     }
     
     a {
-        @include mixins.cta-button(variables.$primary-color-1, variables.$text-color-2);
+        @include mixins.cta-button(variables.$primary-color-1, variables.$primary-color-2);
         
         &:hover {
             background-color: variables.$text-color-2;
@@ -196,7 +212,7 @@ main {
         
         &:hover {
             background-color: variables.$primary-color-1;
-            color: variables.$text-color-2;
+            color: variables.$primary-color-2;
         }
     }
 }
@@ -484,7 +500,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    padding: 0 96px;
 
     .variant-contact {
         display: flex;
@@ -617,6 +633,7 @@ footer {
 @media screen and (min-width: 1440px) {
     nav {
         width: 1440px;
+        
     }
 
     section {

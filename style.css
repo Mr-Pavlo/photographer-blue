@@ -5,14 +5,11 @@
   scroll-behavior: smooth;
 }
 
-header, main, footer {
-  padding: 0 96px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Philosopher", sans-serif;
   font-size: 47px;
   font-weight: 600;
+  color: #1D1D1E;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
@@ -23,6 +20,7 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  padding: 0 96px;
   align-items: center;
   z-index: 99;
   left: 50%;
@@ -47,6 +45,7 @@ nav li {
   text-align: center;
 }
 nav a {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
@@ -55,15 +54,28 @@ nav a {
   color: #1D1D1E;
   display: block;
   padding: 30px 20px;
-  transition: 0.2s ease-out;
 }
-nav a:hover {
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
   background-color: #2B3E82;
-  color: #FAFAFA;
+  transform: translateX(-50%);
+  transition: width 0.2s ease-out;
+}
+nav a:hover::after {
+  width: 100%;
 }
 
 main {
   padding-top: 79.2px;
+}
+
+section {
+  padding: 0 96px;
 }
 
 #home {
@@ -83,6 +95,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #1D1D1E;
   line-height: 20px;
   margin-bottom: 78px;
 }
@@ -91,7 +104,7 @@ main {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #FAFAFA;
+  color: #FDE9EB;
   background-color: #2B3E82;
   border: none;
   text-align: center;
@@ -180,6 +193,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #1D1D1E;
   line-height: 20px;
   margin-bottom: 78px;
 }
@@ -198,7 +212,7 @@ main {
 }
 #about a:hover {
   background-color: #2B3E82;
-  color: #FAFAFA;
+  color: #FDE9EB;
 }
 
 #reviews {
@@ -229,6 +243,7 @@ main {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #1D1D1E;
   line-height: 20px;
   margin-bottom: 78px;
   padding: 25px;
@@ -453,6 +468,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0 96px;
 }
 footer .variant-contact {
   display: flex;
