@@ -7,7 +7,6 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Philosopher", sans-serif;
-  font-size: 47px;
   font-weight: 600;
   color: #1D1D1E;
   text-transform: uppercase;
@@ -20,16 +19,12 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 96px;
   align-items: center;
   z-index: 99;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: white;
 }
 nav .logo {
   text-transform: uppercase;
-  font-size: 21px;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
 }
@@ -41,7 +36,6 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  width: 140px;
   text-align: center;
 }
 nav a {
@@ -50,16 +44,13 @@ nav a {
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   color: #1D1D1E;
   display: block;
-  padding: 30px 20px;
 }
 nav a::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0px;
   width: 0;
   height: 2px;
   background-color: #2B3E82;
@@ -70,12 +61,8 @@ nav a:hover::after {
   width: 100%;
 }
 
-main {
-  padding-top: 79.2px;
-}
-
 section {
-  padding: 0 96px;
+  width: 100%;
 }
 
 #home {
@@ -93,11 +80,6 @@ section {
 }
 #home .decoration-paragraphs {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #1D1D1E;
-  line-height: 20px;
-  margin-bottom: 78px;
 }
 #home a {
   text-decoration: none;
@@ -117,8 +99,6 @@ section {
   color: #2B3E82;
 }
 #home .hero-pink-squa {
-  width: 614px;
-  height: 553px;
   background-color: #FDE9EB;
   border: none;
 }
@@ -127,33 +107,23 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  width: 600px;
-  height: 500px;
   position: relative;
-  padding-left: 33px;
   top: -30px;
 }
 #home .img-small {
-  width: 191px;
-  height: 297px;
   flex-shrink: 0;
   -o-object-fit: fill;
      object-fit: fill;
 }
 #home .img-large {
-  width: 339px;
-  height: 297px;
   flex-shrink: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
 #home .rectangle-on-collage {
   position: absolute;
-  width: 491px;
-  height: 674px;
   border: 2px solid #2B3E82;
   left: 62.5px;
-  top: -30px;
 }
 
 #about {
@@ -163,39 +133,26 @@ section {
   justify-content: space-around;
   align-items: center;
 }
+#about .decoration-paragraphs {
+  font-family: "Montserrat", sans-serif;
+}
 #about .about-pink-squa {
   background-color: #FDE9EB;
-  width: 392px;
-  height: 492px;
 }
 #about .about-pink-squa img {
-  width: 392px;
-  height: 492px;
   position: relative;
   top: -10px;
   left: -10px;
 }
 #about .about-pink-squa .rectangle-for-about {
-  width: 392px;
-  height: 492px;
   border: 2px solid #2B3E82;
   position: relative;
-  top: -496px;
 }
 #about .text-content-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 611px;
-}
-#about .decoration-paragraphs {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #1D1D1E;
-  line-height: 20px;
-  margin-bottom: 78px;
 }
 #about a {
   text-decoration: none;
@@ -220,32 +177,25 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 70px;
 }
 #reviews img {
-  width: 110px;
-  height: 110px;
+  max-width: 110px;
+  max-height: 110px;
 }
 #reviews .list-reviews {
   display: grid;
-  grid-template-columns: repeat(3, 402px);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
 }
 #reviews .item-list-reviews {
   display: flex;
   flex-direction: column;
-  gap: 37px;
   align-items: center;
   position: relative;
+  gap: 37px;
 }
 #reviews .decoration-paragraphs {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #1D1D1E;
-  line-height: 20px;
-  margin-bottom: 78px;
   padding: 25px;
   background-color: #FDE9EB;
   max-width: 370px;
@@ -299,9 +249,8 @@ section {
 #portfolio .navigation-collage {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 100%;
 }
 #portfolio .portfolio-collage {
   display: flex;
@@ -310,8 +259,6 @@ section {
   position: relative;
 }
 #portfolio .pink-rectangular-portfolio {
-  width: 237px;
-  height: 366px;
   background-color: #FDE9EB;
   position: absolute;
   z-index: -1;
@@ -319,16 +266,12 @@ section {
   left: -20px;
 }
 #portfolio .dark-border-rectangular-portfolio {
-  width: 237px;
-  height: 366px;
   border: 2px solid #2B3E82;
   position: absolute;
   top: 20px;
   left: 20px;
 }
 #portfolio .dark-rectangular-portfolio {
-  width: 448px;
-  height: 160px;
   background-color: #2B3E82;
   position: absolute;
   z-index: -1;
@@ -348,10 +291,6 @@ section {
   flex-direction: column;
   gap: 20px;
 }
-#portfolio .img-1, #portfolio .img-2, #portfolio .img-3, #portfolio .img-8 {
-  width: 277px;
-  height: 200px;
-}
 #portfolio .img-2 {
   -o-object-position: center 30%;
      object-position: center 30%;
@@ -366,29 +305,16 @@ section {
   flex-direction: row;
   gap: 20px;
 }
-#portfolio .img-4 {
-  width: 297px;
-  height: 420px;
-}
-#portfolio .img-5 {
-  width: 382px;
-  height: 420px;
-}
 #portfolio .small-img-in-coll-right {
   display: flex;
   flex-direction: row;
   gap: 20px;
-}
-#portfolio .img-6, #portfolio .img-7 {
-  width: 191px;
-  height: 200px;
 }
 
 #price {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 73px;
 }
 #price .list-type-price {
   display: flex;
@@ -471,6 +397,7 @@ footer {
   padding: 0 96px;
 }
 footer .variant-contact {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -497,7 +424,9 @@ footer label {
 footer label:last-of-type {
   margin-bottom: 58px;
 }
-footer input[type=tel], footer input[type=email], footer textarea {
+footer input[type=tel],
+footer input[type=email],
+footer textarea {
   width: 402px;
   padding: 13px 11px;
   background-color: #2B3E82;
@@ -510,7 +439,8 @@ footer input::-moz-placeholder, footer textarea::-moz-placeholder {
   color: #FAFAFA;
   opacity: 0.8;
 }
-footer input::placeholder, footer textarea::placeholder {
+footer input::placeholder,
+footer textarea::placeholder {
   color: #FAFAFA;
   opacity: 0.8;
 }
@@ -565,7 +495,8 @@ footer textarea {
   scrollbar-color: #FAFAFA #2B3E82;
   resize: none;
 }
-footer h6, footer a {
+footer h6,
+footer a {
   color: #FAFAFA;
 }
 footer a {
@@ -595,36 +526,312 @@ footer li:first-of-type {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 40px;
+  }
+  main {
+    padding-top: 55.2px;
+  }
   nav {
-    width: 1440px;
+    width: 100%;
+    padding: 0 43px;
+  }
+  nav .logo {
+    font-size: 18px;
+  }
+  nav a {
+    font-size: 16px;
+    padding: 18px 20px;
+  }
+  nav a::after {
+    bottom: 11px;
   }
   section {
-    width: 1440px;
-    scroll-margin-top: 79.2px;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    scroll-margin-top: 55.2px;
+    padding: 60px 34px;
   }
   #home {
-    height: calc(100vh - 79.2px);
+    padding-top: 100px;
   }
   #home .text-content-home {
-    width: 508px;
+    min-width: 350px;
+    max-width: 508px;
+    text-align: left;
+  }
+  #home .decoration-paragraphs {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    margin-bottom: 60px;
+  }
+  #home .hero-pink-squa {
+    width: 552.6px;
+    height: 497.7px;
+  }
+  #home .container-collage {
+    width: 540px;
+    height: 450px;
+    padding-left: 23px;
+  }
+  #home .img-small {
+    width: 171.9px;
+    height: 267.3px;
+  }
+  #home .img-large {
+    width: 305.1px;
+    height: 267.3px;
+  }
+  #home .rectangle-on-collage {
+    width: 441.9px;
+    height: 606.6px;
+    top: -25px;
   }
   #about {
-    height: calc(80vh - 79.2px);
+    scroll-margin-top: 20px;
   }
-  #reviews {
-    height: calc(70vh - 79.2px);
+  #about .about-pink-squa {
+    width: 313.6px;
+    height: 393.6px;
   }
-  #portfolio {
-    height: calc(100vh - 79.2px);
+  #about .about-pink-squa img {
+    width: 313.6px;
+    height: 393.6px;
+  }
+  #about .about-pink-squa .rectangle-for-about {
+    width: 313.6px;
+    height: 393.6px;
+    top: -396.8px;
+  }
+  #about .decoration-paragraphs {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    margin-bottom: 60px;
+  }
+  #about .text-content-home {
+    width: 488.8px;
+  }
+  #reviews .list-reviews {
+    grid-template-columns: repeat(2, 402px);
+    gap: 20px;
+  }
+  #reviews .item-list-reviews:last-child {
+    grid-column: 1/-1;
+    width: 402px;
+    justify-self: center;
+  }
+  #reviews .decoration-paragraphs {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    text-align: justify;
+  }
+  #portfolio .navigation-collage {
+    gap: 45px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    width: 165.9px;
+    height: 256.2px;
+  }
+  #portfolio .dark-border-rectangular-portfolio {
+    width: 165.9px;
+    height: 256.2px;
+  }
+  #portfolio .dark-rectangular-portfolio {
+    width: 313.6px;
+    height: 112px;
+  }
+  #portfolio .light-border-rectangular-portfolio {
+    width: 313.6px;
+    height: 112px;
+  }
+  #portfolio .img-1,
+  #portfolio .img-2,
+  #portfolio .img-3,
+  #portfolio .img-8 {
+    width: 193.9px;
+    height: 140px;
+  }
+  #portfolio .img-4 {
+    width: 207.9px;
+    height: 294px;
+  }
+  #portfolio .img-5 {
+    width: 267.4px;
+    height: 294px;
+  }
+  #portfolio .img-6,
+  #portfolio .img-7 {
+    width: 133.7px;
+    height: 140px;
   }
   #price {
-    height: calc(90vh - 79.2px);
+    transform: scale(0.8);
+    scroll-margin-top: 50px;
+    gap: 53px;
   }
-  .variant-contact {
-    width: 1440px;
+}
+@media screen and (min-width: 1440px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 47px;
+  }
+  nav {
+    width: 100%;
+    padding: 0 96px;
+  }
+  nav .logo {
+    text-transform: uppercase;
+    font-size: 21px;
+  }
+  nav a {
+    font-size: 16px;
+    padding: 30px 20px;
+  }
+  nav a::after {
+    bottom: 20px;
+  }
+  main {
+    padding-top: 79.2px;
+  }
+  section {
+    scroll-margin-top: 79.2px;
+    padding: 126px 96px;
+  }
+  #home {
+    height: calc(100% - 79.2px);
+  }
+  #home .text-content-home {
+    max-width: 508px;
+  }
+  #home .decoration-paragraphs {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+  }
+  #home .hero-pink-squa {
+    transform: scale(1);
+    width: 614px;
+    height: 553px;
+  }
+  #home .container-collage {
+    width: 600px;
+    height: 500px;
+    padding-left: 33px;
+  }
+  #home .img-small {
+    width: 191px;
+    height: 297px;
+  }
+  #home .img-large {
+    width: 339px;
+    height: 297px;
+  }
+  #home .rectangle-on-collage {
+    width: 491px;
+    height: 674px;
+    top: -30px;
+  }
+  #about {
+    height: calc(100% - 79.2px);
+    scroll-margin-top: 0px;
+  }
+  #about .about-pink-squa {
+    width: 392px;
+    height: 492px;
+  }
+  #about .about-pink-squa img {
+    width: 392px;
+    height: 492px;
+  }
+  #about .about-pink-squa .rectangle-for-about {
+    width: 392px;
+    height: 492px;
+    top: -496px;
+  }
+  #about .text-content-home {
+    width: 611px;
+  }
+  #about .decoration-paragraphs {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+  }
+  #reviews {
+    height: calc(100% - 79.2px);
+  }
+  #reviews .list-reviews {
+    grid-template-columns: repeat(3, 402px);
+    gap: 40px;
+  }
+  #reviews .item-list-reviews:last-child {
+    grid-column: 3;
+  }
+  #reviews .decoration-paragraphs {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+  }
+  #portfolio {
+    height: calc(100% - 79.2px);
+    scroll-margin-top: 0px;
+  }
+  #portfolio .navigation-collage {
+    width: 100%;
+    gap: 45px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    width: 237px;
+    height: 366px;
+  }
+  #portfolio .dark-border-rectangular-portfolio {
+    width: 237px;
+    height: 366px;
+  }
+  #portfolio .dark-rectangular-portfolio {
+    width: 448px;
+    height: 160px;
+  }
+  #portfolio .light-border-rectangular-portfolio {
+    width: 448px;
+    height: 160px;
+  }
+  #portfolio .img-1,
+  #portfolio .img-2,
+  #portfolio .img-3,
+  #portfolio .img-8 {
+    width: 277px;
+    height: 200px;
+  }
+  #portfolio .img-4 {
+    width: 297px;
+    height: 420px;
+  }
+  #portfolio .img-5 {
+    width: 382px;
+    height: 420px;
+  }
+  #portfolio .img-6,
+  #portfolio .img-7 {
+    width: 191px;
+    height: 200px;
+  }
+  #price {
+    height: calc(100% - 79.2px);
+    scroll-margin-top: 0px;
+    transform: scale(1);
+    gap: 73px;
   }
 }/*# sourceMappingURL=style.css.map */

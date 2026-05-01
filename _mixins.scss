@@ -1,8 +1,7 @@
 @use 'variables';
 
-@mixin decoration-paragraphs {
-    font-family: variables.$font-montserrat;
-    font-size: variables.$paragraph-size-1;
+@mixin decoration-paragraphs ($font-size) {
+    font-size: $font-size;
     font-weight: variables.$weight-400;
     color: variables.$text-color-1;
     line-height: 20px;

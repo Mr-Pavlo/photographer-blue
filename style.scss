@@ -8,14 +8,8 @@
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: variables.$font-philosopher;
-    font-size: variables.$all-heading-size;
     font-weight: variables.$weight-600;
     color: variables.$text-color-1;
     text-transform: uppercase;
@@ -28,18 +22,13 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0 96px;
     align-items: center;
     z-index: 99;
-
-    left: 50%;
-    transform: translateX(-50%);
 
     background-color: white;
 
     .logo {
         text-transform: uppercase;
-        font-size: variables.$buttom-size;
         font-family: variables.$font-philosopher;
         font-weight: variables.$weight-700;
     }
@@ -53,7 +42,6 @@ nav {
 
     li {
         display: inline-block;
-        width: 140px;
         text-align: center;
     }
 
@@ -65,17 +53,14 @@ nav {
 
         font-weight: variables.$weight-400;
         font-family: variables.$font-montserrat;
-        font-size: variables.$paragraph-size-1;
         color: variables.$text-color-1;
 
         display: block;
-        padding: 30px 20px;
 
         &::after {
             content: "";
             position: absolute;
             left: 50%;
-            bottom: 0px;
 
             width: 0;
             height: 2px;
@@ -92,12 +77,8 @@ nav {
     }
 }
 
-main {
-    padding-top: 79.2px;
-}
-
 section {
-    padding: 0 96px;
+    width: 100%;
 }
 
 #home {
@@ -115,7 +96,7 @@ section {
     }
 
     .decoration-paragraphs {
-        @include mixins.decoration-paragraphs;
+        font-family: variables.$font-montserrat;
     }
 
     a {
@@ -128,8 +109,6 @@ section {
     }
 
     .hero-pink-squa {
-        width: 614px;
-        height: 553px;
         background-color: variables.$primary-color-2;
         border: none;
     }
@@ -139,34 +118,24 @@ section {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
-        width: 600px;
-        height: 500px;
         position: relative;
-        padding-left: 33px;
         top: -30px;
     }
 
     .img-small {
-        width: 191px;
-        height: 297px;
         flex-shrink: 0;
         object-fit: fill;
     }
 
     .img-large {
-        width: 339px;
-        height: 297px;
         flex-shrink: 0;
         object-fit: cover;
     }
 
     .rectangle-on-collage {
         position: absolute;
-        width: 491px;
-        height: 674px;
         border: 2px solid variables.$primary-color-1;
         left: 62.5px;
-        top: -30px;
     }
 }
 
@@ -177,26 +146,22 @@ section {
     justify-content: space-around;
     align-items: center;
 
+    .decoration-paragraphs {
+        font-family: variables.$font-montserrat;
+    }
 
     .about-pink-squa {
         background-color: variables.$primary-color-2;
-        width: 392px;
-        height: 492px;
 
         img {
-            width: 392px;
-            height: 492px;
             position: relative;
             top: -10px;
             left: -10px;
         }
 
         .rectangle-for-about {
-            width: 392px;
-            height: 492px;
             border: 2px solid variables.$primary-color-1;
             position: relative;
-            top: -496px;
         }
     }
 
@@ -205,11 +170,6 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        width: 611px;
-    }
-
-    .decoration-paragraphs {
-        @include mixins.decoration-paragraphs;
     }
 
     a {
@@ -227,29 +187,28 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 70px;
 
     img {
-        width: 110px;
-        height: 110px;
+        max-width: 110px;
+        max-height: 110px;
     }
 
     .list-reviews {
         display: grid;
-        grid-template-columns: repeat(3, 402px);
-        column-gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
     }
 
     .item-list-reviews {
         display: flex;
         flex-direction: column;
-        gap: 37px;
         align-items: center;
         position: relative;
+        gap: 37px;
     }
 
     .decoration-paragraphs {
-        @include mixins.decoration-paragraphs;
+        font-family: variables.$font-montserrat;
         padding: 25px;
         background-color: variables.$primary-color-2;
         max-width: 370px;
@@ -310,9 +269,8 @@ section {
     .navigation-collage {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        width: 100%;
     }
 
     .portfolio-collage {
@@ -323,8 +281,6 @@ section {
     }
 
     .pink-rectangular-portfolio {
-        width: 237px;
-        height: 366px;
         background-color: variables.$primary-color-2;
         position: absolute;
         z-index: -1;
@@ -333,8 +289,6 @@ section {
     }
 
     .dark-border-rectangular-portfolio {
-        width: 237px;
-        height: 366px;
         border: 2px solid variables.$primary-color-1;
         position: absolute;
         top: 20px;
@@ -342,8 +296,6 @@ section {
     }
 
     .dark-rectangular-portfolio {
-        width: 448px;
-        height: 160px;
         background-color: variables.$primary-color-1;
         position: absolute;
         z-index: -1;
@@ -366,14 +318,6 @@ section {
         gap: 20px;
     }
 
-    .img-1,
-    .img-2,
-    .img-3,
-    .img-8 {
-        width: 277px;
-        height: 200px;
-    }
-
     .img-2 {
         object-position: center 30%;
     }
@@ -390,26 +334,10 @@ section {
         gap: 20px;
     }
 
-    .img-4 {
-        width: 297px;
-        height: 420px;
-    }
-
-    .img-5 {
-        width: 382px;
-        height: 420px;
-    }
-
     .small-img-in-coll-right {
         display: flex;
         flex-direction: row;
         gap: 20px;
-    }
-
-    .img-6,
-    .img-7 {
-        width: 191px;
-        height: 200px;
     }
 }
 
@@ -417,7 +345,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 73px;
 
     .list-type-price {
         display: flex;
@@ -464,7 +391,7 @@ section {
         bottom: 8px;
         color: variables.$text-color-2;
         font-family: variables.$font-philosopher;
-        font-size: variables.$paragraph-size-2;
+        font-size: variables.$p-hero-sect-1440-N2;
         width: 50%;
     }
 
@@ -472,7 +399,6 @@ section {
         display: flex;
         flex-direction: column;
         gap: 20px;
-
     }
 
     li {
@@ -512,6 +438,7 @@ footer {
     padding: 0 96px;
 
     .variant-contact {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -643,45 +570,363 @@ footer {
     }
 }
 
-@media screen and (min-width: 1440px) {
-    nav {
-        width: 1440px;
+@media screen and (min-width: 1024px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: variables.$heading-size-1024;
+    }
 
+    main {
+        padding-top: 55.2px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0 43px;
+
+        .logo {
+            font-size: variables.$logo-size-1024;
+        }
+
+        a {
+            font-size: variables.$p-hero-sect-1440-N1;
+            padding: 18px 20px;
+
+            &::after {
+                bottom: 11px;
+            }
+        }
     }
 
     section {
-        width: 1440px;
-        scroll-margin-top: 79.2px;
-        margin: 0 auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        scroll-margin-top: 55.2px;
+        padding: 60px 34px;
     }
 
     #home {
-        height: calc(100vh - 79.2px);
+        padding-top: 100px;
 
         .text-content-home {
-            width: 508px;
+            min-width: 350px;
+            max-width: 508px;
+            text-align: left;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-1024-N1);
+            margin-bottom: 60px;
+        }
+
+        .hero-pink-squa {
+            width: calc(614px * 0.9);
+            height: calc(553px * 0.9);
+        }
+
+        .container-collage {
+            width: calc(600px * 0.9);
+            height: calc(500px * 0.9);
+            padding-left: 23px;
+        }
+
+        .img-small {
+            width: calc(191px * 0.9);
+            height: calc(297px * 0.9);
+        }
+
+        .img-large {
+            width: calc(339px * 0.9);
+            height: calc(297px * 0.9);
+        }
+
+        .rectangle-on-collage {
+            width: calc(491px * 0.9);
+            height: calc(674px * 0.9);
+            top: -25px;
         }
     }
 
     #about {
-        height: calc(80vh - 79.2px);
+        scroll-margin-top: 20px;
+
+        .about-pink-squa {
+            width: calc(392px * 0.8);
+            height: calc(492px * 0.8);
+
+            img {
+                width: calc(392px * 0.8);
+                height: calc(492px * 0.8);
+            }
+
+            .rectangle-for-about {
+                width: calc(392px * 0.8);
+                height: calc(492px * 0.8);
+                top: calc(-496px * 0.8);
+            }
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-1024-N1);
+            margin-bottom: 60px;
+        }
+
+        .text-content-home {
+            width: calc(611px * 0.8);
+        }
     }
 
     #reviews {
-        height: calc(70vh - 79.2px);
+        .list-reviews {
+            grid-template-columns: repeat(2, 402px);
+            gap: 20px;
+        }
+
+        .item-list-reviews:last-child {
+            grid-column: 1 / -1;
+            width: 402px;
+            justify-self: center;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-1024-N1);
+            text-align: justify;
+        }
     }
 
     #portfolio {
-        height: calc(100vh - 79.2px);
+        .navigation-collage {
+            gap: 45px;
+        }
+
+        .pink-rectangular-portfolio {
+            width: calc(237px * 0.7);
+            height: calc(366px * 0.7);
+        }
+        
+        .dark-border-rectangular-portfolio {
+            width: calc(237px * 0.7);
+            height: calc(366px * 0.7);
+        }
+        
+        .dark-rectangular-portfolio {
+            width: calc(448px * 0.7);
+            height: calc(160px * 0.7);
+        }
+        
+        .light-border-rectangular-portfolio {
+            width: calc(448px * 0.7);
+            height: calc(160px * 0.7);
+        }
+        
+        .img-1,
+        .img-2,
+        .img-3,
+        .img-8 {
+            width: calc(277px * 0.7);
+            height: calc(200px * 0.7);
+        }
+        
+        .img-4 {
+            width: calc(297px * 0.7);
+            height: calc(420px * 0.7);
+        }
+        
+        .img-5 {
+            width: calc(382px * 0.7);
+            height: calc(420px * 0.7);
+        }
+        
+        .img-6,
+        .img-7 {
+            width: calc(191px * 0.7);
+            height: calc(200px * 0.7);
+        }
     }
 
     #price {
-        height: calc(90vh - 79.2px);
+        transform: scale(0.8);
+        scroll-margin-top: 50px;
+        gap: 53px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: variables.$heading-size-1440;
     }
 
-    .variant-contact {
-        width: 1440px;
+    nav {
+        width: 100%;
+        padding: 0 96px;
+        
+        .logo {
+            text-transform: uppercase;
+            font-size: variables.$logo-size-1440;
+        }
+
+        a {
+            font-size: variables.$p-hero-sect-1440-N1;
+            padding: 30px 20px;
+
+            &::after {
+                bottom: 20px;
+            }
+        }
+    }
+
+    main {
+        padding-top: 79.2px;
+    }
+
+    section {
+        scroll-margin-top: 79.2px;
+        padding: 126px 96px;
+    }
+
+    #home {
+        height: calc(100% - 79.2px);
+
+        .text-content-home {
+            max-width: 508px;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-1440-N1);
+        }
+        
+        .hero-pink-squa {
+            transform: scale(1);
+            width: 614px;
+            height: 553px;
+        }
+
+        .container-collage {
+            width: 600px;
+            height: 500px;
+            padding-left: 33px;
+        }
+
+        .img-small {
+            width: 191px;
+            height: 297px;
+        }
+
+        .img-large {
+            width: 339px;
+            height: 297px;
+        }
+
+        .rectangle-on-collage {
+            width: 491px;
+            height: 674px;
+            top: -30px;
+        }
+    }
+
+    #about {
+        height: calc(100% - 79.2px);
+        scroll-margin-top: 0px;
+
+        .about-pink-squa {
+            width: 392px;
+            height: 492px;
+
+            img {
+                width: 392px;
+                height: 492px;
+            }
+
+            .rectangle-for-about {
+                width: 392px;
+                height: 492px;
+                top: -496px;
+            }
+        }
+
+        .text-content-home {
+            width: 611px;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-1440-N1);
+        }
+    }
+
+    #reviews {
+        height: calc(100% - 79.2px);
+
+        .list-reviews {
+            grid-template-columns: repeat(3, 402px);
+            gap: 40px;
+        }
+
+        .item-list-reviews:last-child {
+            grid-column: 3;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-1440-N1);
+        }
+    }
+
+    #portfolio {
+        height: calc(100% - 79.2px);
+        scroll-margin-top: 0px;
+
+        .navigation-collage {
+            width: 100%;
+            gap: 45px;
+        }
+
+        .pink-rectangular-portfolio {
+            width: 237px;
+            height: 366px;
+        }
+
+        .dark-border-rectangular-portfolio {
+            width: 237px;
+            height: 366px;
+        }
+
+        .dark-rectangular-portfolio {
+            width: 448px;
+            height: 160px;
+        }
+
+        .light-border-rectangular-portfolio {
+            width: 448px;
+            height: 160px;
+        }
+
+        .img-1,
+        .img-2,
+        .img-3,
+        .img-8 {
+            width: 277px;
+            height: 200px;
+        }
+
+        .img-4 {
+            width: 297px;
+            height: 420px;
+        }
+
+        .img-5 {
+            width: 382px;
+            height: 420px;
+        }
+
+        .img-6,
+        .img-7 {
+            width: 191px;
+            height: 200px;
+        }
+    }
+
+    #price {
+        height: calc(100% - 79.2px);
+        scroll-margin-top: 0px;
+        transform: scale(1.0);
+        gap: 73px;
     }
 }
