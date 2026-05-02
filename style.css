@@ -322,8 +322,6 @@ footer {
 footer .variant-contact {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 footer fieldset {
   display: flex;
@@ -1098,6 +1096,8 @@ footer li:first-of-type {
   }
   footer .variant-contact {
     gap: 0px;
+    flex-direction: row;
+    justify-content: space-between;
   }
   footer .contact-on-social {
     margin-bottom: 56px;

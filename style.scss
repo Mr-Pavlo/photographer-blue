@@ -368,8 +368,6 @@ footer {
     .variant-contact {
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     fieldset {
@@ -1209,6 +1207,8 @@ footer {
 
         .variant-contact {
             gap: 0px;
+            flex-direction: row;
+            justify-content: space-between;
         }
 
         .contact-on-social {
