@@ -20,8 +20,6 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
     z-index: 99;
 
@@ -83,7 +81,6 @@ section {
 
 #home {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -99,15 +96,6 @@ section {
         font-family: variables.$font-montserrat;
     }
 
-    a {
-        @include mixins.cta-button(variables.$primary-color-1, variables.$primary-color-2);
-
-        &:hover {
-            background-color: variables.$text-color-2;
-            color: variables.$primary-color-1;
-        }
-    }
-
     .hero-pink-squa {
         background-color: variables.$primary-color-2;
         border: none;
@@ -117,9 +105,7 @@ section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 20px;
         position: relative;
-        top: -30px;
     }
 
     .img-small {
@@ -135,13 +121,11 @@ section {
     .rectangle-on-collage {
         position: absolute;
         border: 2px solid variables.$primary-color-1;
-        left: 62.5px;
     }
 }
 
 #about {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
@@ -188,15 +172,9 @@ section {
     align-items: center;
     justify-content: center;
 
-    img {
-        max-width: 110px;
-        max-height: 110px;
-    }
-
     .list-reviews {
         display: grid;
         justify-content: center;
-        margin-top: 50px;
     }
 
     .item-list-reviews {
@@ -204,14 +182,11 @@ section {
         flex-direction: column;
         align-items: center;
         position: relative;
-        gap: 37px;
     }
 
     .decoration-paragraphs {
         font-family: variables.$font-montserrat;
-        padding: 25px;
         background-color: variables.$primary-color-2;
-        max-width: 370px;
         flex: 1;
     }
 
@@ -219,28 +194,17 @@ section {
         position: absolute;
         border: 1px solid variables.$primary-color-1;
         z-index: -1;
-        width: 157px;
-        height: 140px;
-        top: -22px;
-        left: 136px;
     }
 
     .top-rectangular-light {
         position: absolute;
         border: 2px solid variables.$primary-color-2;
-        width: 157px;
-        height: 140px;
-        top: -8px;
-        left: 108px;
     }
 
     .bottom-rectangular {
         position: absolute;
         border: 1px solid variables.$primary-color-1;
-        width: 402px;
-        height: 254px;
         z-index: -1;
-        top: 70px;
     }
 }
 
@@ -259,11 +223,6 @@ section {
         outline-offset: 10px;
 
         transition: transform 0.3s ease-out, outline-color 0.3s ease-out, margin 0.3s ease-out;
-
-        &:hover {
-            transform: scale(110%);
-            outline-color: variables.$primary-color-1;
-        }
     }
 
     .navigation-collage {
@@ -276,7 +235,6 @@ section {
     .portfolio-collage {
         display: flex;
         flex-direction: row;
-        gap: 20px;
         position: relative;
     }
 
@@ -284,23 +242,17 @@ section {
         background-color: variables.$primary-color-2;
         position: absolute;
         z-index: -1;
-        top: -20px;
-        left: -20px;
     }
 
     .dark-border-rectangular-portfolio {
         border: 2px solid variables.$primary-color-1;
         position: absolute;
-        top: 20px;
-        left: 20px;
     }
 
     .dark-rectangular-portfolio {
         background-color: variables.$primary-color-1;
         position: absolute;
         z-index: -1;
-        bottom: -20px;
-        right: -20px;
     }
 
     .light-border-rectangular-portfolio {
@@ -308,14 +260,11 @@ section {
         height: 160px;
         position: absolute;
         border: 2px solid variables.$primary-color-2;
-        bottom: 20px;
-        right: 20px;
     }
 
     .coll-left {
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
     .img-2 {
@@ -325,19 +274,17 @@ section {
     .coll-right {
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
     .large-img-in-coll-right {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        height: 100%;
     }
 
     .small-img-in-coll-right {
         display: flex;
         flex-direction: row;
-        gap: 20px;
     }
 }
 
@@ -348,8 +295,6 @@ section {
 
     .list-type-price {
         display: flex;
-        flex-direction: row;
-        gap: 40px;
         justify-content: center;
     }
 
@@ -357,27 +302,20 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 34px;
-        margin: 0 0;
 
-        padding: 21px;
         background-color: variables.$primary-color-2;
         border: none;
         outline: 2px solid transparent;
-        outline-offset: 20px;
-
+        
         transition: transform 0.2s ease-out, outline-color 0.2s ease-out, margin 0.2s ease-out;
 
         &:hover {
             outline-color: variables.$primary-color-1;
             transform: scale(1.1);
-            margin: 0 21px;
         }
     }
 
     img {
-        width: 255px;
-        height: 240px;
         object-fit: cover;
     }
 
@@ -387,18 +325,14 @@ section {
 
     p {
         position: absolute;
-        left: 8px;
-        bottom: 8px;
         color: variables.$text-color-2;
         font-family: variables.$font-philosopher;
-        font-size: variables.$p-hero-sect-1440-N2;
         width: 50%;
     }
 
     ul {
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
     li {
@@ -407,16 +341,12 @@ section {
         flex-direction: row;
         align-items: center;
         font-family: variables.$font-montserrat;
-        font-size: variables.$li-size;
         color: variables.$text-color-3;
-        gap: 5px;
     }
 
     .button-card-price {
         border: 2px solid variables.$primary-color-1;
-        padding: 8px 52px;
         font-family: variables.$font-montserrat;
-        font-size: variables.$li-size;
         font-weight: variables.$weight-700;
         text-decoration: none;
         text-transform: uppercase;
@@ -433,19 +363,13 @@ section {
 footer {
     background-color: variables.$primary-color-1;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding: 0 96px;
 
     .variant-contact {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    form {
-        margin: 126px 0;
     }
 
     fieldset {
@@ -455,16 +379,8 @@ footer {
     }
 
     legend {
-        margin-bottom: 18px;
-        font-size: variables.$legend-size;
         font-family: variables.$font-philosopher;
         color: variables.$text-color-2;
-        line-height: 31px
-    }
-
-    label {
-        margin-bottom: 28px;
-        width: 402px;
     }
 
     label:last-of-type {
@@ -474,13 +390,10 @@ footer {
     input[type="tel"],
     input[type="email"],
     textarea {
-        width: 402px;
-        padding: 13px 11px;
         background-color: variables.$primary-color-1;
         border: 2px solid variables.$text-color-2;
         color: variables.$text-color-2;
         font-family: variables.$font-montserrat;
-        font-size: variables.$textarea-size;
     }
 
     input::placeholder,
@@ -509,7 +422,6 @@ footer {
         @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
         cursor: pointer;
         align-self: flex-start;
-        padding: 10px 118px;
         border: 2px solid variables.$text-color-2;
 
         &:hover {
@@ -520,10 +432,6 @@ footer {
     }
 
     textarea {
-        min-height: 120px;
-        max-height: 120px;
-        min-width: 402px;
-        max-width: 402px;
         overflow-y: auto;
 
         scrollbar-width: thin;
@@ -532,40 +440,796 @@ footer {
         resize: none;
     }
 
-    h6,
-    a {
+    h6, a {
         color: variables.$text-color-2;
     }
 
     a {
         text-decoration: none;
         font-family: variables.$font-montserrat;
-        font-size: variables.$li-size;
 
         &:hover {
             color: orange;
         }
     }
 
-    .contact-on-social {
-        align-self: self-end;
-        margin-bottom: 126px;
-    }
-
     .list-social {
         display: flex;
         flex-direction: row;
-        gap: 20px;
     }
 
     li {
         display: flex;
         flex-direction: row;
         text-align: start;
-        gap: 20px;
 
         &:first-of-type {
             margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: variables.$heading-size-375;
+    }
+
+    nav {
+        width: 100%;
+        padding: 5px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .logo {
+            font-size: variables.$logo-size-375;
+        }
+
+        a {
+            font-size: variables.$p-hero-sect-768-N1;
+            padding: 12px 10px;
+
+            &::after {
+                bottom: 8px;
+            }
+        }
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    #home {
+        gap: 60px;
+
+        h1 {
+            text-align: center;
+        }
+
+        padding-top: 100px;
+        flex-direction: column;
+
+        .text-content-home {
+            min-width: 355px;
+            text-align: justify;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-375-N1);
+            line-height: 16px;
+            margin-bottom: 18px;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$primary-color-1, variables.$primary-color-2);
+            padding: 8px 20px;
+            font-size: 12px;
+
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
+
+        .hero-pink-squa {
+            width: calc(614px * 0.5);
+            height: calc(553px * 0.5);
+        }
+
+        .container-collage {
+            width: calc(600px * 0.5);
+            height: calc(500px * 0.5);
+            padding-left: 23px;
+            gap: 10px;
+            top: -15px;
+            left: -7px;
+        }
+
+        .img-small {
+            width: calc(191px * 0.5);
+            height: calc(297px * 0.5);
+        }
+
+        .img-large {
+            width: calc(339px * 0.5);
+            height: calc(297px * 0.5);
+        }
+
+        .rectangle-on-collage {
+            width: calc(491px * 0.5);
+            height: calc(674px * 0.5);
+            top: -15px;
+            left: 38px;
+        }
+    }
+
+    #about {
+        scroll-margin-top: 45px;
+        flex-direction: column;
+        gap: 20px;
+
+
+        .about-pink-squa {
+            width: calc(392px * 0.5);
+            height: calc(492px * 0.5);
+
+            img {
+                width: calc(392px * 0.5);
+                height: calc(492px * 0.5);
+            }
+
+            .rectangle-for-about {
+                width: calc(392px * 0.5);
+                height: calc(492px * 0.5);
+                top: calc(-496px * 0.5);
+            }
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-375-N1);
+            line-height: 16px;
+            margin-bottom: 18px;
+        }
+
+        .text-content-home {
+            min-width: 355px;
+            text-align: justify;
+            width: 100%;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+            padding: 8px 20px;
+            font-size: 12px;
+
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
+    }
+
+    #reviews {
+        gap: 30px;
+        
+        img {
+            max-width: calc(110px * 0.8);
+            max-height: calc(110px * 0.8);
+        }
+
+        .list-reviews {
+            grid-template-columns: calc(402px * 0.7);
+        }
+
+        .item-list-reviews:nth-child(2) {
+            margin-top: 20px;
+        }
+
+        .decoration-paragraphs {
+            padding: 8px;
+            max-width: 305px;
+        }
+
+        .top-rectangular-dark {
+            width: calc(157px * 0.8);
+            height: calc(140px * 0.8);
+            top: -19px;
+            left: 93px;
+        }
+
+        .top-rectangular-light {
+            width: calc(157px * 0.8);
+            height: calc(140px * 0.8);
+            top: -6px;
+            left: 65px;
+        }
+
+        .item-list-reviews {
+            gap: 30px;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-768-N1);
+            text-align: justify;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
+
+        .bottom-rectangular {
+            width: calc(402px * 0.8);
+            height: calc(254px * 0.8);
+            top: 50px;
+        }
+    }
+
+    #portfolio {
+        scroll-margin-top: 40px;
+        gap: 15px;
+
+        .switch {
+            display: none;
+        }
+
+        .portfolio-collage {
+            gap: 4px;
+        }
+
+        .pink-rectangular-portfolio {
+            top: -10px;
+            left: -10px;
+        }
+
+        .pink-rectangular-portfolio {
+            width: calc(237px * 0.4);
+            height: calc(366px * 0.4);
+        }
+        
+        .dark-border-rectangular-portfolio {
+            width: calc(237px * 0.4);
+            height: calc(366px * 0.4);
+            top: 11px;
+            left: 10px;
+        }
+        
+        .dark-rectangular-portfolio {
+            width: calc(448px * 0.4);
+            height: calc(160px * 0.4);
+            bottom: -10px;
+            right: -10px;
+        }
+        
+        .light-border-rectangular-portfolio {
+            width: calc(448px * 0.4);
+            height: calc(160px * 0.4);
+            bottom: 8px;
+            right: 8px;
+        }
+
+        .coll-left {
+            gap: 6px;
+        }
+
+        .coll-right {
+            gap: 4px;
+        }
+
+        .large-img-in-coll-right {
+            gap: 4px;
+        }
+
+        .small-img-in-coll-right {
+            gap: 6px;
+        }
+
+        .img-1, .img-2, .img-3, .img-8 {
+            width: calc(277px * 0.35);
+            height: calc(200px * 0.35);
+        }
+        
+        .img-4 {
+            width: calc(297px * 0.35);
+            height: calc(420px * 0.35);
+        }
+        
+        .img-5 {
+            width: calc(382px * 0.35);
+            height: calc(420px * 0.35);
+        }
+        
+        .img-6, .img-7 {
+            width: calc(191px * 0.35);
+            height: calc(200px * 0.35);
+        }
+    }
+
+    #price {
+        height: calc(100% - 50px);
+        scroll-margin-top: 40px;
+        gap: 40px;
+
+        p {
+            left: 8px;
+            bottom: 8px;
+            font-size: variables.$p-hero-sect-1024-N2;
+        }
+
+        img {
+            width: calc(255px * 0.7);
+            height: calc(240px * 0.7);
+        }
+
+        ul {
+            gap: 8px;
+        }
+
+        li {
+            gap: 5px;
+            font-size: variables.$li-for-price-1024;
+        }
+
+        .list-type-price {
+            gap: 50px;
+            flex-direction: column;
+        }
+
+        .card-price {
+            gap: 25px;
+            padding: 15px;
+            outline-offset: 15px;
+            
+            &:hover {
+                margin: 5px 0;
+            }
+        }
+
+        .button-card-price {
+            padding: 8px 52px;
+            font-size: variables.$li-for-price-1024;
+        }
+    }
+    
+    footer {
+        flex-direction: column;
+        padding: 45px 10px;
+
+        .variant-contact {
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .contact-on-social {
+            align-self: flex-start;
+        }
+
+        legend {
+            font-size: variables.$legend-size-375;
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-bottom: 12px;
+            width: 300px;
+        }
+
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 300px;
+            padding: 3px 5px;
+        }
+
+        input[type="button"] {
+            padding: 0px 50px;
+        }
+
+        .list-social {
+            gap: 40px;
+        }
+
+        li {
+            align-items: end;
+            gap: 5px;
+
+            &:first-of-type {
+                margin-bottom: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 758px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: variables.$heading-size-768;
+    }
+
+    main {
+        padding-top: 55.2px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0 43px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .logo {
+            font-size: variables.$logo-size-1024;
+        }
+
+        a {
+            font-size: variables.$p-hero-sect-1024-N1;
+            padding: 18px 20px;
+
+            &::after {
+                bottom: 11px;
+            }
+        }
+    }
+
+    section {
+        scroll-margin-top: 55.2px;
+        padding: 60px 43px;
+    }
+
+    #home {
+        gap: 0px;
+
+        h1 {
+            text-align: left;
+        }
+
+        padding-top: 110px;
+        flex-direction: row;
+
+        .text-content-home {
+            min-width: 200px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-768-N1);
+            margin-bottom: 40px;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$primary-color-1, variables.$primary-color-2);
+            padding: 12px 30px;
+            font-size: 16px;
+
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
+
+        .hero-pink-squa {
+            width: calc(614px * 0.6);
+            height: calc(553px * 0.6);
+        }
+
+        .container-collage {
+            width: calc(600px * 0.6);
+            height: calc(500px * 0.6);
+            padding-left: 23px;
+            gap: 10px;
+            top: -15px;
+            left: -2px;
+        }
+
+        .img-small {
+            width: calc(191px * 0.6);
+            height: calc(297px * 0.6);
+        }
+
+        .img-large {
+            width: calc(339px * 0.6);
+            height: calc(297px * 0.6);
+        }
+
+        .rectangle-on-collage {
+            width: calc(491px * 0.6);
+            height: calc(674px * 0.6);
+            top: -20px;
+            left: 40px;
+        }
+    }
+
+    #about {
+        gap: 0;
+        flex-direction: row;
+
+        .about-pink-squa {
+            width: calc(392px * 0.7);
+            height: calc(492px * 0.7);
+
+            img {
+                width: calc(392px * 0.7);
+                height: calc(492px * 0.7);
+            }
+
+            .rectangle-for-about {
+                width: calc(392px * 0.7);
+                height: calc(492px * 0.7);
+                top: calc(-496px * 0.7);
+            }
+        }
+
+        .decoration-paragraphs {
+            @include mixins.decoration-paragraphs(variables.$p-hero-sect-768-N1);
+            margin-bottom: 40px;
+        }
+
+        .text-content-home {
+            width: calc(611px * 0.5);
+            text-align: left;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: left;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+            padding: 12px 30px;
+            font-size: 16px;
+
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
+    }
+
+    #reviews {
+        gap: 50px;
+
+        .list-reviews {
+            grid-template-columns: repeat(2, calc(402px * 0.8));
+            gap: 15px;
+        }
+
+        .item-list-reviews:last-child {
+            grid-column: 1 / -1;
+            width: calc(402px * 0.8);
+            justify-self: center;
+        }
+
+        .item-list-reviews:nth-child(2) {
+            margin-top: 0;
+        }
+
+        .decoration-paragraphs {
+            padding: 10px;
+        }
+
+        .top-rectangular-dark {
+            top: -18px;
+            left: 110px;
+        }
+
+        .top-rectangular-light {
+            top: -8px;
+            left: 88px;
+        }
+
+        .item-list-reviews {
+            gap: 30px;
+        }
+    }
+
+    #portfolio {
+        scroll-margin-top: 0px;
+        overflow: visible;
+        gap: 20px;
+
+        .switch {
+            display: block;
+
+            transform: scale(0.75);
+
+            &:hover {
+                transform: scale(90%);
+                outline-color: variables.$primary-color-1;
+            }
+        }
+
+        .navigation-collage {
+            gap: 30px;
+        }
+
+        .portfolio-collage {
+            gap: 10px;
+        }
+
+        .pink-rectangular-portfolio {
+            top: -15px;
+            left: -15px;
+        }
+
+        .pink-rectangular-portfolio {
+            width: calc(237px * 0.55);
+            height: calc(366px * 0.55);
+        }
+        
+        .dark-border-rectangular-portfolio {
+            width: calc(237px * 0.55);
+            height: calc(366px * 0.55);
+            top: 20px;
+            left: 10px;
+        }
+        
+        .dark-rectangular-portfolio {
+            width: calc(448px * 0.55);
+            height: calc(160px * 0.55);
+            bottom: -15px;
+            right: -15px;
+        }
+        
+        .light-border-rectangular-portfolio {
+            width: calc(448px * 0.55);
+            height: calc(160px * 0.55);
+            bottom: 10px;
+            right: 15px;
+        }
+
+        .large-img-in-coll-right {
+            gap: 20px;
+        }
+
+        .small-img-in-coll-right {
+            gap: 20px;
+        }
+
+        .coll-left {
+            gap: 20px;
+        }
+
+        .coll-right {
+            gap: 20px;
+        }
+        
+        .img-1, .img-2, .img-3, .img-8 {
+            width: calc(277px * 0.55);
+            height: calc(200px * 0.55);
+        }
+        
+        .img-4 {
+            width: calc(297px * 0.55);
+            height: calc(420px * 0.55);
+        }
+        
+        .img-5 {
+            width: calc(382px * 0.55);
+            height: calc(420px * 0.55);
+        }
+        
+        .img-6, .img-7 {
+            width: calc(191px * 0.55);
+            height: calc(200px * 0.55);
+        }
+    }
+
+    #price {
+        height: calc(100% - 52.8px);
+        scroll-margin-top: 0px;
+        gap: 40px;
+
+        p {
+            left: 8px;
+            bottom: 8px;
+            font-size: variables.$p-hero-sect-1024-N2;
+        }
+
+        img {
+            width: calc(255px * 0.7);
+            height: calc(240px * 0.7);
+        }
+
+        ul {
+            gap: 8px;
+        }
+
+        li {
+            gap: 5px;
+            font-size: variables.$li-for-price-1024;
+        }
+
+        .list-type-price {
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .card-price {
+            gap: 24px;
+            padding: 15px;
+            outline-offset: 15px;
+
+            &:hover {
+                margin: 0 20px;
+            }
+        }
+
+        .button-card-price {
+            padding: 8px 52px;
+            font-size: variables.$li-for-price-1024;
+        }
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 0 43px;
+
+        form {
+            margin: 56px 0;
+        }
+
+        legend {
+            font-size: variables.$legend-size-1440;
+            margin-bottom: 14px;
+            line-height: 27px;
+        }
+
+        label {
+            margin-bottom: 14px;
+            width: 290px;
+        }
+
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 290px;
+            padding: 8px 5px;
+            font-size: variables.$textarea-size;
+        }
+
+        input[type="button"] {
+            padding: 4px 70px;
+        }
+
+        textarea {
+            min-height: 120px;
+            max-height: 120px;
+            min-width: 290px;
+            max-width: 290px;
+        }
+
+        .variant-contact {
+            gap: 0px;
+        }
+
+        .contact-on-social {
+            margin-bottom: 56px;
+        }
+
+        .contact-on-social {
+            align-self: self-end;
+        }
+
+        .list-social {
+            gap: 30px;
+        }
+
+        li {
+            align-items: end;
+            gap: 5px;
+
+            &:first-of-type {
+                margin-bottom: 10px;
+            }
         }
     }
 }
@@ -599,21 +1263,31 @@ footer {
 
     section {
         scroll-margin-top: 55.2px;
-        padding: 60px 34px;
+        padding: 80px 34px;
     }
 
     #home {
         padding-top: 100px;
+        padding-bottom: 100px;
 
         .text-content-home {
             min-width: 350px;
             max-width: 508px;
-            text-align: left;
         }
 
         .decoration-paragraphs {
             @include mixins.decoration-paragraphs(variables.$p-hero-sect-1024-N1);
             margin-bottom: 60px;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$primary-color-1, variables.$primary-color-2);
+            font-size: 18px;
+            
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
         }
 
         .hero-pink-squa {
@@ -625,6 +1299,9 @@ footer {
             width: calc(600px * 0.9);
             height: calc(500px * 0.9);
             padding-left: 23px;
+            gap: 15px;
+            top: -30px;
+            left: 3px;
         }
 
         .img-small {
@@ -641,6 +1318,7 @@ footer {
             width: calc(491px * 0.9);
             height: calc(674px * 0.9);
             top: -25px;
+            left: 48px;
         }
     }
 
@@ -671,9 +1349,18 @@ footer {
         .text-content-home {
             width: calc(611px * 0.8);
         }
+
+        
     }
 
     #reviews {
+        gap: 50px;
+        
+        img {
+            max-width: 110px;
+            max-height: 110px;
+        }
+
         .list-reviews {
             grid-template-columns: repeat(2, 402px);
             gap: 20px;
@@ -686,14 +1373,81 @@ footer {
         }
 
         .decoration-paragraphs {
+            padding: 25px;
+            max-width: 370px;
+        }
+
+        .top-rectangular-dark {
+            width: 157px;
+            height: 140px;
+            top: -22px;
+            left: 136px;
+        }
+
+        .top-rectangular-light {
+            width: 157px;
+            height: 140px;
+            top: -8px;
+            left: 108px;
+        }
+
+        .item-list-reviews {
+            gap: 37px;
+        }
+
+        .decoration-paragraphs {
             @include mixins.decoration-paragraphs(variables.$p-hero-sect-1024-N1);
             text-align: justify;
+        }
+
+        a {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
+
+        .bottom-rectangular {
+            width: 402px;
+            height: 254px;
+            top: 70px;
         }
     }
 
     #portfolio {
+        gap: 20px;
+        scroll-margin-top: 0px;
+
+        .switch {
+            transform: scale(1.0);
+
+            &:hover {
+                transform: scale(110%);
+                outline-color: variables.$primary-color-1;
+            }
+        }
+
         .navigation-collage {
             gap: 45px;
+        }
+
+        .portfolio-collage {
+            gap: 20px;
+        }
+
+        .large-img-in-coll-right {
+            gap: 20px;
+        }
+
+        .small-img-in-coll-right {
+            gap: 20px;
+        }
+
+        .pink-rectangular-portfolio {
+            top: -20px;
+            left: -20px;
         }
 
         .pink-rectangular-portfolio {
@@ -704,22 +1458,25 @@ footer {
         .dark-border-rectangular-portfolio {
             width: calc(237px * 0.7);
             height: calc(366px * 0.7);
+            top: 22px;
+            left: 15px;
         }
         
         .dark-rectangular-portfolio {
             width: calc(448px * 0.7);
             height: calc(160px * 0.7);
+            bottom: -20px;
+            right: -20px;
         }
         
         .light-border-rectangular-portfolio {
             width: calc(448px * 0.7);
             height: calc(160px * 0.7);
+            bottom: 12px;
+            right: 15px;
         }
         
-        .img-1,
-        .img-2,
-        .img-3,
-        .img-8 {
+        .img-1, .img-2, .img-3, .img-8 {
             width: calc(277px * 0.7);
             height: calc(200px * 0.7);
         }
@@ -742,15 +1499,71 @@ footer {
     }
 
     #price {
-        transform: scale(0.8);
-        scroll-margin-top: 50px;
-        gap: 53px;
+        height: calc(100% - 52.2px);
+        scroll-margin-top: 0px;
+        gap: 50px;
+
+        img {
+            width: calc(255px * 0.8);
+            height: calc(240px * 0.8);
+        }
+    }
+
+    footer {
+        padding: 0 34px;
+
+        form {
+            margin: 86px 0;
+        }
+
+        legend {
+            font-size: variables.$legend-size-1440;
+            margin-bottom: 18px;
+            line-height: 31px;
+        }
+
+        label {
+            margin-bottom: 18px;
+            width: 380px;
+        }
+
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 380px;
+            padding: 9px 7px;
+            font-size: variables.$textarea-size;
+        }
+
+        input[type="button"] {
+            padding: 8px 100px;
+        }
+
+        textarea {
+            min-width: 380px;
+            max-width: 380px;
+        }
+
+        a {
+            font-size: variables.$li-nav-and-footer-1024;
+        }
+
+        .contact-on-social {
+            margin-bottom: 86px;
+        }
+
+        .list-social {
+            gap: 50px;
+        }
+
+        input[type="button"] {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+            padding: 8px 90px;
+        }
     }
 }
 
-
 @media screen and (min-width: 1440px) {
-
     h1, h2, h3, h4, h5, h6 {
         font-size: variables.$heading-size-1440;
     }
@@ -793,6 +1606,15 @@ footer {
         .decoration-paragraphs {
             @include mixins.decoration-paragraphs(variables.$p-hero-sect-1440-N1);
         }
+
+        a {
+            @include mixins.cta-button(variables.$primary-color-1, variables.$primary-color-2);
+            
+            &:hover {
+                background-color: variables.$text-color-2;
+                color: variables.$primary-color-1;
+            }
+        }
         
         .hero-pink-squa {
             transform: scale(1);
@@ -803,7 +1625,7 @@ footer {
         .container-collage {
             width: 600px;
             height: 500px;
-            padding-left: 33px;
+            padding-left: 32px;
         }
 
         .img-small {
@@ -820,6 +1642,7 @@ footer {
             width: 491px;
             height: 674px;
             top: -30px;
+            left: 60px;
         }
     }
 
@@ -886,6 +1709,8 @@ footer {
         .dark-border-rectangular-portfolio {
             width: 237px;
             height: 366px;
+            top: 28px;
+            left: 20px;
         }
 
         .dark-rectangular-portfolio {
@@ -896,6 +1721,8 @@ footer {
         .light-border-rectangular-portfolio {
             width: 448px;
             height: 160px;
+            bottom: 20px;
+            right: 20px;
         }
 
         .img-1,
@@ -925,8 +1752,81 @@ footer {
 
     #price {
         height: calc(100% - 79.2px);
-        scroll-margin-top: 0px;
-        transform: scale(1.0);
         gap: 73px;
+
+        p {
+            font-size: variables.$p-hero-sect-1440-N2;
+        }
+
+        img {
+            width: 255px;
+            height: 240px;
+        }
+
+        ul {
+            gap: 10px;
+        }
+
+        li {
+            gap: 10px;
+            font-size: variables.$li-for-price-1440;
+        }
+
+        .list-type-price {
+            gap: 40px;
+        }
+
+        .card-price {
+            gap: 34px;
+            padding: 21px;
+            outline-offset: 20px;
+        }
+
+        .button-card-price {
+            padding: 8px 52px;
+            font-size: variables.$li-for-price-1440;
+        }
+    }
+
+    footer {
+        padding: 0 96px;
+
+        form {
+            margin: 126px 0;
+        }
+
+        label {
+            margin-bottom: 28px;
+            width: 402px;
+        }
+
+        input[type="tel"],
+        input[type="email"],
+        textarea {
+            width: 402px;
+            padding: 13px 11px;
+        }
+
+        textarea {
+            min-width: 402px;
+            max-width: 402px;
+        }
+
+        input[type="button"] {
+            padding: 10px 118px;
+        }
+
+        .contact-on-social {
+            margin-bottom: 126px;
+        }
+
+        li {
+            align-items: end;
+            gap: 20px;
+
+            &:first-of-type {
+                margin-bottom: 20px;
+            }
+        }
     }
 }

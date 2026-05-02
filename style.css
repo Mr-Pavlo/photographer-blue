@@ -17,8 +17,6 @@ nav {
   position: fixed;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   align-items: center;
   z-index: 99;
   background-color: white;
@@ -67,7 +65,6 @@ section {
 
 #home {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -81,23 +78,6 @@ section {
 #home .decoration-paragraphs {
   font-family: "Montserrat", sans-serif;
 }
-#home a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #FDE9EB;
-  background-color: #2B3E82;
-  border: none;
-  text-align: center;
-  padding: 16px 48px;
-  border: 2px solid #2B3E82;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-}
-#home a:hover {
-  background-color: #FAFAFA;
-  color: #2B3E82;
-}
 #home .hero-pink-squa {
   background-color: #FDE9EB;
   border: none;
@@ -106,9 +86,7 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
   position: relative;
-  top: -30px;
 }
 #home .img-small {
   flex-shrink: 0;
@@ -123,12 +101,10 @@ section {
 #home .rectangle-on-collage {
   position: absolute;
   border: 2px solid #2B3E82;
-  left: 62.5px;
 }
 
 #about {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
@@ -159,6 +135,7 @@ section {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 21px;
   color: #2B3E82;
   background-color: #FAFAFA;
   border: none;
@@ -178,53 +155,34 @@ section {
   align-items: center;
   justify-content: center;
 }
-#reviews img {
-  max-width: 110px;
-  max-height: 110px;
-}
 #reviews .list-reviews {
   display: grid;
   justify-content: center;
-  margin-top: 50px;
 }
 #reviews .item-list-reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  gap: 37px;
 }
 #reviews .decoration-paragraphs {
   font-family: "Montserrat", sans-serif;
-  padding: 25px;
   background-color: #FDE9EB;
-  max-width: 370px;
   flex: 1;
 }
 #reviews .top-rectangular-dark {
   position: absolute;
   border: 1px solid #2B3E82;
   z-index: -1;
-  width: 157px;
-  height: 140px;
-  top: -22px;
-  left: 136px;
 }
 #reviews .top-rectangular-light {
   position: absolute;
   border: 2px solid #FDE9EB;
-  width: 157px;
-  height: 140px;
-  top: -8px;
-  left: 108px;
 }
 #reviews .bottom-rectangular {
   position: absolute;
   border: 1px solid #2B3E82;
-  width: 402px;
-  height: 254px;
   z-index: -1;
-  top: 70px;
 }
 
 #portfolio {
@@ -242,10 +200,6 @@ section {
   outline-offset: 10px;
   transition: transform 0.3s ease-out, outline-color 0.3s ease-out, margin 0.3s ease-out;
 }
-#portfolio .switch:hover {
-  transform: scale(110%);
-  outline-color: #2B3E82;
-}
 #portfolio .navigation-collage {
   display: flex;
   flex-direction: row;
@@ -255,41 +209,31 @@ section {
 #portfolio .portfolio-collage {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   position: relative;
 }
 #portfolio .pink-rectangular-portfolio {
   background-color: #FDE9EB;
   position: absolute;
   z-index: -1;
-  top: -20px;
-  left: -20px;
 }
 #portfolio .dark-border-rectangular-portfolio {
   border: 2px solid #2B3E82;
   position: absolute;
-  top: 20px;
-  left: 20px;
 }
 #portfolio .dark-rectangular-portfolio {
   background-color: #2B3E82;
   position: absolute;
   z-index: -1;
-  bottom: -20px;
-  right: -20px;
 }
 #portfolio .light-border-rectangular-portfolio {
   width: 448px;
   height: 160px;
   position: absolute;
   border: 2px solid #FDE9EB;
-  bottom: 20px;
-  right: 20px;
 }
 #portfolio .coll-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 #portfolio .img-2 {
   -o-object-position: center 30%;
@@ -298,17 +242,15 @@ section {
 #portfolio .coll-right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 #portfolio .large-img-in-coll-right {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  height: 100%;
 }
 #portfolio .small-img-in-coll-right {
   display: flex;
   flex-direction: row;
-  gap: 20px;
 }
 
 #price {
@@ -318,31 +260,22 @@ section {
 }
 #price .list-type-price {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
   justify-content: center;
 }
 #price .card-price {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 34px;
-  margin: 0 0;
-  padding: 21px;
   background-color: #FDE9EB;
   border: none;
   outline: 2px solid transparent;
-  outline-offset: 20px;
   transition: transform 0.2s ease-out, outline-color 0.2s ease-out, margin 0.2s ease-out;
 }
 #price .card-price:hover {
   outline-color: #2B3E82;
   transform: scale(1.1);
-  margin: 0 21px;
 }
 #price img {
-  width: 255px;
-  height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -351,17 +284,13 @@ section {
 }
 #price p {
   position: absolute;
-  left: 8px;
-  bottom: 8px;
   color: #FAFAFA;
   font-family: "Philosopher", sans-serif;
-  font-size: 36px;
   width: 50%;
 }
 #price ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 #price li {
   list-style: none;
@@ -369,15 +298,11 @@ section {
   flex-direction: row;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
   color: #414143;
-  gap: 5px;
 }
 #price .button-card-price {
   border: 2px solid #2B3E82;
-  padding: 8px 52px;
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -392,9 +317,7 @@ section {
 footer {
   background-color: #2B3E82;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding: 0 96px;
 }
 footer .variant-contact {
   width: 100%;
@@ -402,24 +325,14 @@ footer .variant-contact {
   flex-direction: row;
   justify-content: space-between;
 }
-footer form {
-  margin: 126px 0;
-}
 footer fieldset {
   display: flex;
   flex-direction: column;
   border: none;
 }
 footer legend {
-  margin-bottom: 18px;
-  font-size: 27px;
   font-family: "Philosopher", sans-serif;
   color: #FAFAFA;
-  line-height: 31px;
-}
-footer label {
-  margin-bottom: 28px;
-  width: 402px;
 }
 footer label:last-of-type {
   margin-bottom: 58px;
@@ -427,13 +340,10 @@ footer label:last-of-type {
 footer input[type=tel],
 footer input[type=email],
 footer textarea {
-  width: 402px;
-  padding: 13px 11px;
   background-color: #2B3E82;
   border: 2px solid #FAFAFA;
   color: #FAFAFA;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
 }
 footer input::-moz-placeholder, footer textarea::-moz-placeholder {
   color: #FAFAFA;
@@ -468,6 +378,7 @@ footer input[type=button] {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 21px;
   color: #2B3E82;
   background-color: #FAFAFA;
   border: none;
@@ -477,7 +388,6 @@ footer input[type=button] {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   cursor: pointer;
   align-self: flex-start;
-  padding: 10px 118px;
   border: 2px solid #FAFAFA;
 }
 footer input[type=button]:hover {
@@ -486,46 +396,726 @@ footer input[type=button]:hover {
   color: #FAFAFA;
 }
 footer textarea {
-  min-height: 120px;
-  max-height: 120px;
-  min-width: 402px;
-  max-width: 402px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #FAFAFA #2B3E82;
   resize: none;
 }
-footer h6,
-footer a {
+footer h6, footer a {
   color: #FAFAFA;
 }
 footer a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
 }
 footer a:hover {
   color: orange;
 }
-footer .contact-on-social {
-  align-self: self-end;
-  margin-bottom: 126px;
-}
 footer .list-social {
   display: flex;
   flex-direction: row;
-  gap: 20px;
 }
 footer li {
   display: flex;
   flex-direction: row;
   text-align: start;
-  gap: 20px;
 }
 footer li:first-of-type {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 375px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 25px;
+  }
+  nav {
+    width: 100%;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .logo {
+    font-size: 16px;
+  }
+  nav a {
+    font-size: 13px;
+    padding: 12px 10px;
+  }
+  nav a::after {
+    bottom: 8px;
+  }
+  section {
+    padding: 40px 10px;
+  }
+  #home {
+    gap: 60px;
+  }
+  #home h1 {
+    text-align: center;
+  }
+  #home {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+  #home .text-content-home {
+    min-width: 355px;
+    text-align: justify;
+  }
+  #home .decoration-paragraphs {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+  #home a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FDE9EB;
+    background-color: #2B3E82;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  #home a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
+  #home .hero-pink-squa {
+    width: 307px;
+    height: 276.5px;
+  }
+  #home .container-collage {
+    width: 300px;
+    height: 250px;
+    padding-left: 23px;
+    gap: 10px;
+    top: -15px;
+    left: -7px;
+  }
+  #home .img-small {
+    width: 95.5px;
+    height: 148.5px;
+  }
+  #home .img-large {
+    width: 169.5px;
+    height: 148.5px;
+  }
+  #home .rectangle-on-collage {
+    width: 245.5px;
+    height: 337px;
+    top: -15px;
+    left: 38px;
+  }
+  #about {
+    scroll-margin-top: 45px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #about .about-pink-squa {
+    width: 196px;
+    height: 246px;
+  }
+  #about .about-pink-squa img {
+    width: 196px;
+    height: 246px;
+  }
+  #about .about-pink-squa .rectangle-for-about {
+    width: 196px;
+    height: 246px;
+    top: -248px;
+  }
+  #about .decoration-paragraphs {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+  #about .text-content-home {
+    min-width: 355px;
+    text-align: justify;
+    width: 100%;
+  }
+  #about h2 {
+    width: 100%;
+    text-align: center;
+  }
+  #about a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #2B3E82;
+    background-color: #FAFAFA;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  #about a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
+  #reviews {
+    gap: 30px;
+  }
+  #reviews img {
+    max-width: 88px;
+    max-height: 88px;
+  }
+  #reviews .list-reviews {
+    grid-template-columns: 281.4px;
+  }
+  #reviews .item-list-reviews:nth-child(2) {
+    margin-top: 20px;
+  }
+  #reviews .decoration-paragraphs {
+    padding: 8px;
+    max-width: 305px;
+  }
+  #reviews .top-rectangular-dark {
+    width: 125.6px;
+    height: 112px;
+    top: -19px;
+    left: 93px;
+  }
+  #reviews .top-rectangular-light {
+    width: 125.6px;
+    height: 112px;
+    top: -6px;
+    left: 65px;
+  }
+  #reviews .item-list-reviews {
+    gap: 30px;
+  }
+  #reviews .decoration-paragraphs {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    text-align: justify;
+  }
+  #reviews a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #2B3E82;
+    background-color: #FAFAFA;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+  #reviews a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
+  #reviews .bottom-rectangular {
+    width: 321.6px;
+    height: 203.2px;
+    top: 50px;
+  }
+  #portfolio {
+    scroll-margin-top: 40px;
+    gap: 15px;
+  }
+  #portfolio .switch {
+    display: none;
+  }
+  #portfolio .portfolio-collage {
+    gap: 4px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    top: -10px;
+    left: -10px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    width: 94.8px;
+    height: 146.4px;
+  }
+  #portfolio .dark-border-rectangular-portfolio {
+    width: 94.8px;
+    height: 146.4px;
+    top: 11px;
+    left: 10px;
+  }
+  #portfolio .dark-rectangular-portfolio {
+    width: 179.2px;
+    height: 64px;
+    bottom: -10px;
+    right: -10px;
+  }
+  #portfolio .light-border-rectangular-portfolio {
+    width: 179.2px;
+    height: 64px;
+    bottom: 8px;
+    right: 8px;
+  }
+  #portfolio .coll-left {
+    gap: 6px;
+  }
+  #portfolio .coll-right {
+    gap: 4px;
+  }
+  #portfolio .large-img-in-coll-right {
+    gap: 4px;
+  }
+  #portfolio .small-img-in-coll-right {
+    gap: 6px;
+  }
+  #portfolio .img-1, #portfolio .img-2, #portfolio .img-3, #portfolio .img-8 {
+    width: 96.95px;
+    height: 70px;
+  }
+  #portfolio .img-4 {
+    width: 103.95px;
+    height: 147px;
+  }
+  #portfolio .img-5 {
+    width: 133.7px;
+    height: 147px;
+  }
+  #portfolio .img-6, #portfolio .img-7 {
+    width: 66.85px;
+    height: 70px;
+  }
+  #price {
+    height: calc(100% - 50px);
+    scroll-margin-top: 40px;
+    gap: 40px;
+  }
+  #price p {
+    left: 8px;
+    bottom: 8px;
+    font-size: 34px;
+  }
+  #price img {
+    width: 178.5px;
+    height: 168px;
+  }
+  #price ul {
+    gap: 8px;
+  }
+  #price li {
+    gap: 5px;
+    font-size: 12px;
+  }
+  #price .list-type-price {
+    gap: 50px;
+    flex-direction: column;
+  }
+  #price .card-price {
+    gap: 25px;
+    padding: 15px;
+    outline-offset: 15px;
+  }
+  #price .card-price:hover {
+    margin: 5px 0;
+  }
+  #price .button-card-price {
+    padding: 8px 52px;
+    font-size: 12px;
+  }
+  footer {
+    flex-direction: column;
+    padding: 45px 10px;
+  }
+  footer .variant-contact {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  footer .contact-on-social {
+    align-self: flex-start;
+  }
+  footer legend {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  footer label {
+    margin-bottom: 12px;
+    width: 300px;
+  }
+  footer input[type=tel],
+  footer input[type=email],
+  footer textarea {
+    width: 300px;
+    padding: 3px 5px;
+  }
+  footer input[type=button] {
+    padding: 0px 50px;
+  }
+  footer .list-social {
+    gap: 40px;
+  }
+  footer li {
+    align-items: end;
+    gap: 5px;
+  }
+  footer li:first-of-type {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 758px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+  }
+  main {
+    padding-top: 55.2px;
+  }
+  nav {
+    width: 100%;
+    padding: 0 43px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  nav .logo {
+    font-size: 18px;
+  }
+  nav a {
+    font-size: 14px;
+    padding: 18px 20px;
+  }
+  nav a::after {
+    bottom: 11px;
+  }
+  section {
+    scroll-margin-top: 55.2px;
+    padding: 60px 43px;
+  }
+  #home {
+    gap: 0px;
+  }
+  #home h1 {
+    text-align: left;
+  }
+  #home {
+    padding-top: 110px;
+    flex-direction: row;
+  }
+  #home .text-content-home {
+    min-width: 200px;
+    max-width: 300px;
+    text-align: left;
+  }
+  #home .decoration-paragraphs {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    margin-bottom: 40px;
+  }
+  #home a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FDE9EB;
+    background-color: #2B3E82;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+  #home a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
+  #home .hero-pink-squa {
+    width: 368.4px;
+    height: 331.8px;
+  }
+  #home .container-collage {
+    width: 360px;
+    height: 300px;
+    padding-left: 23px;
+    gap: 10px;
+    top: -15px;
+    left: -2px;
+  }
+  #home .img-small {
+    width: 114.6px;
+    height: 178.2px;
+  }
+  #home .img-large {
+    width: 203.4px;
+    height: 178.2px;
+  }
+  #home .rectangle-on-collage {
+    width: 294.6px;
+    height: 404.4px;
+    top: -20px;
+    left: 40px;
+  }
+  #about {
+    gap: 0;
+    flex-direction: row;
+  }
+  #about .about-pink-squa {
+    width: 274.4px;
+    height: 344.4px;
+  }
+  #about .about-pink-squa img {
+    width: 274.4px;
+    height: 344.4px;
+  }
+  #about .about-pink-squa .rectangle-for-about {
+    width: 274.4px;
+    height: 344.4px;
+    top: -347.2px;
+  }
+  #about .decoration-paragraphs {
+    font-size: 13px;
+    font-weight: 400;
+    color: #1D1D1E;
+    line-height: 20px;
+    margin-bottom: 78px;
+    margin-bottom: 40px;
+  }
+  #about .text-content-home {
+    width: 305.5px;
+    text-align: left;
+  }
+  #about h2 {
+    width: 100%;
+    text-align: left;
+  }
+  #about a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #2B3E82;
+    background-color: #FAFAFA;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+  #about a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
+  #reviews {
+    gap: 50px;
+  }
+  #reviews .list-reviews {
+    grid-template-columns: repeat(2, 321.6px);
+    gap: 15px;
+  }
+  #reviews .item-list-reviews:last-child {
+    grid-column: 1/-1;
+    width: 321.6px;
+    justify-self: center;
+  }
+  #reviews .item-list-reviews:nth-child(2) {
+    margin-top: 0;
+  }
+  #reviews .decoration-paragraphs {
+    padding: 10px;
+  }
+  #reviews .top-rectangular-dark {
+    top: -18px;
+    left: 110px;
+  }
+  #reviews .top-rectangular-light {
+    top: -8px;
+    left: 88px;
+  }
+  #reviews .item-list-reviews {
+    gap: 30px;
+  }
+  #portfolio {
+    scroll-margin-top: 0px;
+    overflow: visible;
+    gap: 20px;
+  }
+  #portfolio .switch {
+    display: block;
+    transform: scale(0.75);
+  }
+  #portfolio .switch:hover {
+    transform: scale(90%);
+    outline-color: #2B3E82;
+  }
+  #portfolio .navigation-collage {
+    gap: 30px;
+  }
+  #portfolio .portfolio-collage {
+    gap: 10px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    top: -15px;
+    left: -15px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    width: 130.35px;
+    height: 201.3px;
+  }
+  #portfolio .dark-border-rectangular-portfolio {
+    width: 130.35px;
+    height: 201.3px;
+    top: 20px;
+    left: 10px;
+  }
+  #portfolio .dark-rectangular-portfolio {
+    width: 246.4px;
+    height: 88px;
+    bottom: -15px;
+    right: -15px;
+  }
+  #portfolio .light-border-rectangular-portfolio {
+    width: 246.4px;
+    height: 88px;
+    bottom: 10px;
+    right: 15px;
+  }
+  #portfolio .large-img-in-coll-right {
+    gap: 20px;
+  }
+  #portfolio .small-img-in-coll-right {
+    gap: 20px;
+  }
+  #portfolio .coll-left {
+    gap: 20px;
+  }
+  #portfolio .coll-right {
+    gap: 20px;
+  }
+  #portfolio .img-1, #portfolio .img-2, #portfolio .img-3, #portfolio .img-8 {
+    width: 152.35px;
+    height: 110px;
+  }
+  #portfolio .img-4 {
+    width: 163.35px;
+    height: 231px;
+  }
+  #portfolio .img-5 {
+    width: 210.1px;
+    height: 231px;
+  }
+  #portfolio .img-6, #portfolio .img-7 {
+    width: 105.05px;
+    height: 110px;
+  }
+  #price {
+    height: calc(100% - 52.8px);
+    scroll-margin-top: 0px;
+    gap: 40px;
+  }
+  #price p {
+    left: 8px;
+    bottom: 8px;
+    font-size: 34px;
+  }
+  #price img {
+    width: 178.5px;
+    height: 168px;
+  }
+  #price ul {
+    gap: 8px;
+  }
+  #price li {
+    gap: 5px;
+    font-size: 12px;
+  }
+  #price .list-type-price {
+    flex-direction: row;
+    gap: 25px;
+  }
+  #price .card-price {
+    gap: 24px;
+    padding: 15px;
+    outline-offset: 15px;
+  }
+  #price .card-price:hover {
+    margin: 0 20px;
+  }
+  #price .button-card-price {
+    padding: 8px 52px;
+    font-size: 12px;
+  }
+  footer {
+    flex-direction: row;
+    padding: 0 43px;
+  }
+  footer form {
+    margin: 56px 0;
+  }
+  footer legend {
+    font-size: 27px;
+    margin-bottom: 14px;
+    line-height: 27px;
+  }
+  footer label {
+    margin-bottom: 14px;
+    width: 290px;
+  }
+  footer input[type=tel],
+  footer input[type=email],
+  footer textarea {
+    width: 290px;
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+  footer input[type=button] {
+    padding: 4px 70px;
+  }
+  footer textarea {
+    min-height: 120px;
+    max-height: 120px;
+    min-width: 290px;
+    max-width: 290px;
+  }
+  footer .variant-contact {
+    gap: 0px;
+  }
+  footer .contact-on-social {
+    margin-bottom: 56px;
+  }
+  footer .contact-on-social {
+    align-self: self-end;
+  }
+  footer .list-social {
+    gap: 30px;
+  }
+  footer li {
+    align-items: end;
+    gap: 5px;
+  }
+  footer li:first-of-type {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1024px) {
   h1, h2, h3, h4, h5, h6 {
     font-size: 40px;
@@ -549,15 +1139,15 @@ footer li:first-of-type {
   }
   section {
     scroll-margin-top: 55.2px;
-    padding: 60px 34px;
+    padding: 80px 34px;
   }
   #home {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
   #home .text-content-home {
     min-width: 350px;
     max-width: 508px;
-    text-align: left;
   }
   #home .decoration-paragraphs {
     font-size: 14px;
@@ -567,6 +1157,25 @@ footer li:first-of-type {
     margin-bottom: 78px;
     margin-bottom: 60px;
   }
+  #home a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FDE9EB;
+    background-color: #2B3E82;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    font-size: 18px;
+  }
+  #home a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
   #home .hero-pink-squa {
     width: 552.6px;
     height: 497.7px;
@@ -575,6 +1184,9 @@ footer li:first-of-type {
     width: 540px;
     height: 450px;
     padding-left: 23px;
+    gap: 15px;
+    top: -30px;
+    left: 3px;
   }
   #home .img-small {
     width: 171.9px;
@@ -588,6 +1200,7 @@ footer li:first-of-type {
     width: 441.9px;
     height: 606.6px;
     top: -25px;
+    left: 48px;
   }
   #about {
     scroll-margin-top: 20px;
@@ -616,6 +1229,13 @@ footer li:first-of-type {
   #about .text-content-home {
     width: 488.8px;
   }
+  #reviews {
+    gap: 50px;
+  }
+  #reviews img {
+    max-width: 110px;
+    max-height: 110px;
+  }
   #reviews .list-reviews {
     grid-template-columns: repeat(2, 402px);
     gap: 20px;
@@ -626,6 +1246,25 @@ footer li:first-of-type {
     justify-self: center;
   }
   #reviews .decoration-paragraphs {
+    padding: 25px;
+    max-width: 370px;
+  }
+  #reviews .top-rectangular-dark {
+    width: 157px;
+    height: 140px;
+    top: -22px;
+    left: 136px;
+  }
+  #reviews .top-rectangular-light {
+    width: 157px;
+    height: 140px;
+    top: -8px;
+    left: 108px;
+  }
+  #reviews .item-list-reviews {
+    gap: 37px;
+  }
+  #reviews .decoration-paragraphs {
     font-size: 14px;
     font-weight: 400;
     color: #1D1D1E;
@@ -633,8 +1272,55 @@ footer li:first-of-type {
     margin-bottom: 78px;
     text-align: justify;
   }
+  #reviews a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #2B3E82;
+    background-color: #FAFAFA;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+  #reviews a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
+  #reviews .bottom-rectangular {
+    width: 402px;
+    height: 254px;
+    top: 70px;
+  }
+  #portfolio {
+    gap: 20px;
+    scroll-margin-top: 0px;
+  }
+  #portfolio .switch {
+    transform: scale(1);
+  }
+  #portfolio .switch:hover {
+    transform: scale(110%);
+    outline-color: #2B3E82;
+  }
   #portfolio .navigation-collage {
     gap: 45px;
+  }
+  #portfolio .portfolio-collage {
+    gap: 20px;
+  }
+  #portfolio .large-img-in-coll-right {
+    gap: 20px;
+  }
+  #portfolio .small-img-in-coll-right {
+    gap: 20px;
+  }
+  #portfolio .pink-rectangular-portfolio {
+    top: -20px;
+    left: -20px;
   }
   #portfolio .pink-rectangular-portfolio {
     width: 165.9px;
@@ -643,19 +1329,22 @@ footer li:first-of-type {
   #portfolio .dark-border-rectangular-portfolio {
     width: 165.9px;
     height: 256.2px;
+    top: 22px;
+    left: 15px;
   }
   #portfolio .dark-rectangular-portfolio {
     width: 313.6px;
     height: 112px;
+    bottom: -20px;
+    right: -20px;
   }
   #portfolio .light-border-rectangular-portfolio {
     width: 313.6px;
     height: 112px;
+    bottom: 12px;
+    right: 15px;
   }
-  #portfolio .img-1,
-  #portfolio .img-2,
-  #portfolio .img-3,
-  #portfolio .img-8 {
+  #portfolio .img-1, #portfolio .img-2, #portfolio .img-3, #portfolio .img-8 {
     width: 193.9px;
     height: 140px;
   }
@@ -673,9 +1362,66 @@ footer li:first-of-type {
     height: 140px;
   }
   #price {
-    transform: scale(0.8);
-    scroll-margin-top: 50px;
-    gap: 53px;
+    height: calc(100% - 52.2px);
+    scroll-margin-top: 0px;
+    gap: 50px;
+  }
+  #price img {
+    width: 204px;
+    height: 192px;
+  }
+  footer {
+    padding: 0 34px;
+  }
+  footer form {
+    margin: 86px 0;
+  }
+  footer legend {
+    font-size: 27px;
+    margin-bottom: 18px;
+    line-height: 31px;
+  }
+  footer label {
+    margin-bottom: 18px;
+    width: 380px;
+  }
+  footer input[type=tel],
+  footer input[type=email],
+  footer textarea {
+    width: 380px;
+    padding: 9px 7px;
+    font-size: 12px;
+  }
+  footer input[type=button] {
+    padding: 8px 100px;
+  }
+  footer textarea {
+    min-width: 380px;
+    max-width: 380px;
+  }
+  footer a {
+    font-size: 21px;
+  }
+  footer .contact-on-social {
+    margin-bottom: 86px;
+  }
+  footer .list-social {
+    gap: 50px;
+  }
+  footer input[type=button] {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #2B3E82;
+    background-color: #FAFAFA;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    padding: 8px 90px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -717,6 +1463,24 @@ footer li:first-of-type {
     line-height: 20px;
     margin-bottom: 78px;
   }
+  #home a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FDE9EB;
+    background-color: #2B3E82;
+    border: none;
+    text-align: center;
+    padding: 16px 48px;
+    border: 2px solid #2B3E82;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+  #home a:hover {
+    background-color: #FAFAFA;
+    color: #2B3E82;
+  }
   #home .hero-pink-squa {
     transform: scale(1);
     width: 614px;
@@ -725,7 +1489,7 @@ footer li:first-of-type {
   #home .container-collage {
     width: 600px;
     height: 500px;
-    padding-left: 33px;
+    padding-left: 32px;
   }
   #home .img-small {
     width: 191px;
@@ -739,6 +1503,7 @@ footer li:first-of-type {
     width: 491px;
     height: 674px;
     top: -30px;
+    left: 60px;
   }
   #about {
     height: calc(100% - 79.2px);
@@ -799,6 +1564,8 @@ footer li:first-of-type {
   #portfolio .dark-border-rectangular-portfolio {
     width: 237px;
     height: 366px;
+    top: 28px;
+    left: 20px;
   }
   #portfolio .dark-rectangular-portfolio {
     width: 448px;
@@ -807,6 +1574,8 @@ footer li:first-of-type {
   #portfolio .light-border-rectangular-portfolio {
     width: 448px;
     height: 160px;
+    bottom: 20px;
+    right: 20px;
   }
   #portfolio .img-1,
   #portfolio .img-2,
@@ -830,8 +1599,65 @@ footer li:first-of-type {
   }
   #price {
     height: calc(100% - 79.2px);
-    scroll-margin-top: 0px;
-    transform: scale(1);
     gap: 73px;
+  }
+  #price p {
+    font-size: 36px;
+  }
+  #price img {
+    width: 255px;
+    height: 240px;
+  }
+  #price ul {
+    gap: 10px;
+  }
+  #price li {
+    gap: 10px;
+    font-size: 21px;
+  }
+  #price .list-type-price {
+    gap: 40px;
+  }
+  #price .card-price {
+    gap: 34px;
+    padding: 21px;
+    outline-offset: 20px;
+  }
+  #price .button-card-price {
+    padding: 8px 52px;
+    font-size: 21px;
+  }
+  footer {
+    padding: 0 96px;
+  }
+  footer form {
+    margin: 126px 0;
+  }
+  footer label {
+    margin-bottom: 28px;
+    width: 402px;
+  }
+  footer input[type=tel],
+  footer input[type=email],
+  footer textarea {
+    width: 402px;
+    padding: 13px 11px;
+  }
+  footer textarea {
+    min-width: 402px;
+    max-width: 402px;
+  }
+  footer input[type=button] {
+    padding: 10px 118px;
+  }
+  footer .contact-on-social {
+    margin-bottom: 126px;
+  }
+  footer li {
+    align-items: end;
+    gap: 20px;
+  }
+  footer li:first-of-type {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
