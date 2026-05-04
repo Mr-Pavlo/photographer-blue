@@ -155,15 +155,6 @@ section {
         justify-content: center;
         align-items: flex-start;
     }
-
-    a {
-        @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
-
-        &:hover {
-            background-color: variables.$primary-color-1;
-            color: variables.$primary-color-2;
-        }
-    }
 }
 
 #reviews {
@@ -565,6 +556,10 @@ footer {
         flex-direction: column;
         gap: 20px;
 
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
 
         .about-pink-squa {
             width: calc(392px * 0.5);
@@ -594,19 +589,14 @@ footer {
             width: 100%;
         }
 
-        h2 {
-            width: 100%;
-            text-align: center;
-        }
-
         a {
             @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
             padding: 8px 20px;
             font-size: 12px;
 
             &:hover {
-                background-color: variables.$text-color-2;
-                color: variables.$primary-color-1;
+                background-color: variables.$primary-color-1;
+                color: variables.$primary-color-2;
             }
         }
     }
@@ -986,8 +976,8 @@ footer {
             font-size: 16px;
 
             &:hover {
-                background-color: variables.$text-color-2;
-                color: variables.$primary-color-1;
+                background-color: variables.$primary-color-1;
+                color: variables.$primary-color-2;
             }
         }
     }
@@ -1350,6 +1340,15 @@ footer {
             width: calc(611px * 0.8);
         }
 
+        a {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+            font-size: 18px;
+
+            &:hover {
+                background-color: variables.$primary-color-1;
+                color: variables.$primary-color-2;
+            }
+        }
         
     }
 
@@ -1672,6 +1671,15 @@ footer {
 
         .decoration-paragraphs {
             @include mixins.decoration-paragraphs(variables.$p-hero-sect-1440-N1);
+        }
+
+        a {
+            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+            
+            &:hover {
+                background-color: variables.$primary-color-1;
+                color: variables.$primary-color-2;
+            }
         }
     }
 
