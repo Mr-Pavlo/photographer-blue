@@ -360,7 +360,7 @@ footer input[type=button] {
   font-weight: 700;
   font-size: 21px;
   color: #2B3E82;
-  background-color: #FAFAFA;
+  background-color: #FDE9EB;
   border: none;
   text-align: center;
   padding: 16px 48px;
@@ -373,7 +373,7 @@ footer input[type=button] {
 footer input[type=button]:hover {
   background-color: #2B3E82;
   border: 2px solid #FAFAFA;
-  color: #FAFAFA;
+  color: #FDE9EB;
 }
 footer textarea {
   overflow-y: auto;
@@ -1416,7 +1416,7 @@ footer li:first-of-type {
     font-weight: 700;
     font-size: 21px;
     color: #2B3E82;
-    background-color: #FAFAFA;
+    background-color: #FDE9EB;
     border: none;
     text-align: center;
     padding: 16px 48px;

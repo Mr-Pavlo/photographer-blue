@@ -408,7 +408,7 @@ footer {
     }
 
     input[type="button"] {
-        @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+        @include mixins.cta-button(variables.$primary-color-2, variables.$primary-color-1);
         cursor: pointer;
         align-self: flex-start;
         border: 2px solid variables.$text-color-2;
@@ -416,7 +416,7 @@ footer {
         &:hover {
             background-color: variables.$primary-color-1;
             border: 2px solid variables.$text-color-2;
-            color: variables.$text-color-2;
+            color: variables.$primary-color-2;
         }
     }
 
@@ -1556,7 +1556,7 @@ footer {
         }
 
         input[type="button"] {
-            @include mixins.cta-button(variables.$text-color-2, variables.$primary-color-1);
+            @include mixins.cta-button(variables.$primary-color-2, variables.$primary-color-1);
             padding: 8px 90px;
         }
     }
