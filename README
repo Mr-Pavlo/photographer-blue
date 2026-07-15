@@ -1,19 +1,20 @@
-# Band Landing Page
+# Photographer Landing Page
 
-Responsive landing page created as a frontend test assignment.
+Responsive landing page for a photographer's portfolio, created as one of my first frontend practice projects.
 
 ## Live Demo
 
-[View the live website](https://mr-pavlo.github.io/band-landing-page/)
+[View the live website](https://mr-pavlo.github.io/photographer-blue/)
 
 ## Screenshot
 
-Тут пізніше можна додати скриншот сторінки.
+[Click me](https://www.awesomescreenshot.com/image/61921670?key=3a9c27e5cfbb47429a7d7dce990c918a)
 
 ## Technologies
 
 - HTML5
 - SCSS
+- CSS
 - Flexbox
 - Responsive Web Design
 - GitHub Pages
@@ -22,14 +23,16 @@ Responsive landing page created as a frontend test assignment.
 
 - Semantic HTML structure
 - Responsive layout
-- Mobile-friendly navigation
+- Sections: Home, About, Portfolio, Pricing, Contacts
 - Reusable SCSS variables and mixins
+- Image collage and portfolio gallery
+- Client reviews section
 - Hover effects and transitions
 
 ## About the Project
 
-The page was created independently from a provided reference
-as part of a frontend test assignment.
+This was one of my first landing pages, built to practice HTML5 and SCSS.
+The code isn't fully clean, but the page is fully functional and responsive.
 
 ## Author
 
